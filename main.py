@@ -7,7 +7,7 @@ def salvar_pagina_html(url, titulo):
     response = requests.get(url)
     with open(f'{titulo}.html', 'w', encoding='utf-8') as f:
         f.write(response.text)
-    print(f"Página salva: {titulo}.html")
+    print(f"Página salva com sucesso: {titulo}.html")
 
 # Função para extrair links de uma página
 def extrair_links(soup):
