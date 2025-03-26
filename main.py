@@ -1,13 +1,22 @@
 import requests
 from bs4 import BeautifulSoup
 import time
+import os
+
+HTML_DIR = "saida_html"
+MAX_PAGINAS = 5 # Valor de teste inicial 
 
 # Função para salvar a página como um arquivo HTML
 def salvar_pagina_html(url, titulo):
+    if not os.path.exists(HTML_DIR): # Cria o diretório de saída html, se ele não existir
+        os.makedirs(HTML_DIR)
+
     response = requests.get(url)
-    with open(f'{titulo}.html', 'w', encoding='utf-8') as f:
+    caminho_arquivo = os.path.join(HTML_DIR, f"{titulo}.html")
+
+    with open(caminho_arquivo, "w", encoding="utf-8") as f:
         f.write(response.text)
-    print(f"Página salva: {titulo}.html")
+    print(f"Página salva: {caminho_arquivo}")
 
 # Função para extrair links de uma página
 def extrair_links(soup):
@@ -31,7 +40,7 @@ def crawler_wikipedia(url_inicial):
     paginas_coletadas = 0    # Contador de páginas coletadas
     proximo_link = url_inicial  # Começa pela página inicial
 
-    while paginas_coletadas < 5:
+    while paginas_coletadas < MAX_PAGINAS:
         try:
             # 1. Obter a página
             response = requests.get(proximo_link)
