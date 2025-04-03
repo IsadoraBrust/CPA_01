@@ -122,6 +122,8 @@ def get_infobox(pagina):
         else:
             # Se não encontrar span, pega o texto direto do th
             title = title_th.get_text(strip=True)
+    else:
+        return None, None
     
     # 2. Processar conteúdo da Infobox
     infobox_data = {} # Dicionário de valores 
@@ -157,6 +159,9 @@ def get_infobox(pagina):
                     if chave:
                         infobox_data[chave] = valor
     
+    if not infobox_data: # Se não encontrou dados válidos na infobox, desconsidera esta infobox 
+        return None, None
+
     return title, infobox_data
 
 def file_reader(diretorio):
@@ -191,7 +196,7 @@ def process_infoboxes(diretorio, output_dir=JSON_DIR):
     resultados = file_reader(diretorio)
     # 2. Salva os resultados em JSON
     for arquivo, info in resultados.items():
-        if info["tem_infobox"]:
+        if info["tem_infobox"] and info["conteudo_infobox"]:
             save_json(
                 dados = info["conteudo_infobox"],
                 output_dir = output_dir,
