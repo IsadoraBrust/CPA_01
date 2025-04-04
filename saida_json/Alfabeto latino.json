@@ -1,0 +1,16 @@
+{
+  "Tipo": "Alfabeto",
+  "Línguas": "Diversas línguas",
+  "Período de tempo": "Século VIII/VII a.C. — presente",
+  "Sistemas-pais": [
+    "Escrita proto-sinaíticaAlfabeto fenícioAlfabeto gregoAntigas escritas itálicasAlfabeto Latino",
+    "Alfabeto fenícioAlfabeto gregoAntigas escritas itálicasAlfabeto Latino",
+    "Alfabeto gregoAntigas escritas itálicasAlfabeto Latino",
+    "Antigas escritas itálicasAlfabeto Latino",
+    "Alfabeto Latino"
+  ],
+  "Sistemas-filhos": "Numerosos alfabetos latinos , Silabário cherokee (em partes)",
+  "Direção": "Esquerda-para-direita",
+  "ISO 15924": "Latn, 215",
+  "Conjunto de carateres Unicode": "U+0000 to U+007E Latim básico e pontuação"
+}

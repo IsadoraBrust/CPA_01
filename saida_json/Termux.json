@@ -1,0 +1,18 @@
+{
+  "Desenvolvedor": "Fredrik Fornwall",
+  "Plataforma": [
+    "x86-64",
+    "ARM64",
+    "i686",
+    "ARMv7"
+  ],
+  "Lançamento": "30 de maio de 2015 (9 anos)",
+  "Escrito em": [
+    "Java",
+    "C",
+    "C++"
+  ],
+  "Sistema operacional": "Android",
+  "Licença": "GPLv3",
+  "Página oficial": "termux .dev"
+}

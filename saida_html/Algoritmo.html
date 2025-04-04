@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="pt" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Algoritmo – Wikipédia, a enciclopédia livre</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )ptwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"],"wgRequestId":"57e053f2-e67c-4a5a-8ddc-182b54ec68e9","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Algoritmo","wgTitle":"Algoritmo","wgCurRevisionId":69710680,"wgRevisionId":69710680,"wgArticleId":257,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["!Páginas que usam hiperligações mágicas ISBN","!Artigos destacados na Wikipédia em tártaro","!Artigos bons na Wikipédia em ucraniano","Algoritmos","Terminologia informática","Computação","Ciência da computação","Programas de computador","Tecnologia da informação"],"wgPageViewLanguage":"pt","wgPageContentLanguage":"pt","wgPageContentModel":"wikitext","wgRelevantPageName":"Algoritmo","wgRelevantArticleId":257,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"pt","pageLanguageDir":"ltr","pageVariantFallbacks":"pt"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q8366","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":true,"wgGELevelingUpEnabledForUser":false,"wgSiteNoticeId":"2.30"};
+RLSTATE={"ext.gadget.FeedbackHighlight-base":"ready","ext.gadget.keepPDU":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready","ext.dismissableSiteNotice.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.Topicon","ext.gadget.Metacaixa","ext.gadget.TitleRewrite","ext.gadget.ElementosOcultaveis","ext.gadget.FeedbackHighlight","ext.gadget.ReferenceTooltips","ext.gadget.NewVillagePump","ext.gadget.wikibugs","ext.gadget.charinsert","ext.gadget.requestForAdminship","ext.gadget.WikiMiniAtlas","ext.gadget.PagesForDeletion","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession","oojs-ui.styles.icons-media","oojs-ui-core.icons","ext.dismissableSiteNotice"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=pt&amp;modules=ext.cite.styles%7Cext.dismissableSiteNotice.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=pt&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=pt&amp;modules=ext.gadget.FeedbackHighlight-base%2CkeepPDU&amp;only=styles&amp;skin=vector-2022">
+<link rel="stylesheet" href="/w/load.php?lang=pt&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.44.0-wmf.23">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="917">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="611">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="489">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Algoritmo – Wikipédia, a enciclopédia livre">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//pt.m.wikipedia.org/wiki/Algoritmo">
+<link rel="alternate" type="application/x-wiki" title="Editar" href="/w/index.php?title=Algoritmo&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipédia (pt)">
+<link rel="EditURI" type="application/rsd+xml" href="//pt.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://pt.wikipedia.org/wiki/Algoritmo">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt">
+<link rel="alternate" type="application/atom+xml" title="&#039;&#039;Feed&#039;&#039; Atom Wikipédia" href="/w/index.php?title=Especial:Mudan%C3%A7as_recentes&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Algoritmo rootpage-Algoritmo skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Saltar para o conteúdo</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="&#039;&#039;Site&#039;&#039;">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Menu principal" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Menu principal"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Menu principal</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Menu principal</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">mover para a barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">ocultar</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navegação
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" title="Visitar a página principal [z]" accesskey="z"><span>Página principal</span></a></li><li id="n-featuredcontent" class="mw-list-item"><a href="/wiki/Portal:Conte%C3%BAdo_destacado"><span>Conteúdo destacado</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Eventos_atuais" title="Informação temática sobre eventos atuais"><span>Eventos atuais</span></a></li><li id="n-villagepump" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Esplanada"><span>Esplanada</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Especial:Aleat%C3%B3ria" title="Carregar página aleatória [x]" accesskey="x"><span>Página aleatória</span></a></li><li id="n-portals" class="mw-list-item"><a href="/wiki/Portal:%C3%8Dndice"><span>Portais</span></a></li><li id="n-bug_in_article" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Informe_um_erro"><span>Informar um erro</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1ginas_especiais"><span>Páginas especiais</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Colaboração
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-welcome" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Boas-vindas"><span>Boas-vindas</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Ajuda:P%C3%A1gina_principal" title="Um local reservado para auxílio."><span>Ajuda</span></a></li><li id="n-Páginas-de-testes-públicas" class="mw-list-item"><a href="/wiki/Ajuda:P%C3%A1gina_de_testes"><span>Páginas de testes públicas</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Portal_comunit%C3%A1rio" title="Sobre o projeto"><span>Portal comunitário</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Especial:Mudan%C3%A7as_recentes" title="Uma lista de mudanças recentes nesta wiki [r]" accesskey="r"><span>Mudanças recentes</span></a></li><li id="n-maintenance" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Manuten%C3%A7%C3%A3o"><span>Manutenção</span></a></li><li id="n-createpage" class="mw-list-item"><a href="/wiki/Ajuda:Guia_de_edi%C3%A7%C3%A3o/Como_come%C3%A7ar_uma_p%C3%A1gina"><span>Criar página</span></a></li><li id="n-newpages-description" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1ginas_novas"><span>Páginas novas</span></a></li><li id="n-contact-description" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Contato"><span>Contato</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipédia" src="/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" style="width: 7.4375em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="" src="/static/images/mobile/copyright/wikipedia-tagline-pt.svg" width="120" height="13" style="width: 7.5em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Especial:Pesquisar" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Pesquisar na Wikipédia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Busca</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Pesquisar na Wikipédia" aria-label="Pesquisar na Wikipédia" autocapitalize="sentences" title="Pesquisar na Wikipédia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Especial:Pesquisar">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Pesquisar</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Ferramentas pessoais">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Aspeto">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Aspeto"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Aspeto</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=pt.wikipedia.org&amp;uselang=pt" class=""><span>Donativos</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Especial:Criar_conta&amp;returnto=Algoritmo" title="É encorajado a criar uma conta e iniciar sessão; no entanto, não é obrigatório" class=""><span>Criar uma conta</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Especial:Entrar&amp;returnto=Algoritmo" title="Aconselhamos-lhe a criar uma conta na Wikipédia, embora tal não seja obrigatório. [o]" accesskey="o" class=""><span>Entrar</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Mais opções" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Ferramentas pessoais"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Ferramentas pessoais</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="Menu do utilizador" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=pt.wikipedia.org&amp;uselang=pt"><span>Donativos</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Especial:Criar_conta&amp;returnto=Algoritmo" title="É encorajado a criar uma conta e iniciar sessão; no entanto, não é obrigatório"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Criar uma conta</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Especial:Entrar&amp;returnto=Algoritmo" title="Aconselhamos-lhe a criar uma conta na Wikipédia, embora tal não seja obrigatório. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Entrar</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Páginas para editores sem sessão iniciada <a href="/wiki/Ajuda:Introduction" aria-label="Saiba mais sobre edição"><span>saber mais</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Especial:Minhas_contribui%C3%A7%C3%B5es" title="Uma lista de edições feitas a partir deste endereço IP [y]" accesskey="y"><span>Contribuições</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Especial:Minha_discuss%C3%A3o" title="Discussão sobre edições feitas a partir deste endereço IP [n]" accesskey="n"><span>Discussão</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><div id="mw-dismissablenotice-anonplace"></div><script>(function(){var node=document.getElementById("mw-dismissablenotice-anonplace");if(node){node.outerHTML="\u003Cdiv class=\"mw-dismissable-notice\"\u003E\u003Cdiv class=\"mw-dismissable-notice-close\"\u003E[\u003Ca tabindex=\"0\" role=\"button\"\u003Eocultar\u003C/a\u003E]\u003C/div\u003E\u003Cdiv class=\"mw-dismissable-notice-body\"\u003E\u003C!-- CentralNotice --\u003E\u003Cdiv id=\"localNotice\" data-nosnippet=\"\"\u003E\u003Cdiv class=\"anonnotice\" lang=\"pt\" dir=\"ltr\"\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E";}}());</script></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="&#039;&#039;Site&#039;&#039;">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Conteúdo" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Conteúdo</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">mover para a barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">ocultar</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">Início</div>
+			</a>
+		</li>
+		<li id="toc-Etimologia"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Etimologia">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Etimologia</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Etimologia-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Formalismo"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Formalismo">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Formalismo</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Formalismo-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Alternar a subsecção Formalismo</span>
+			</button>
+		
+		<ul id="toc-Formalismo-sublist" class="vector-toc-list">
+			<li id="toc-Término_do_algoritmo"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Término_do_algoritmo">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1</span>
+					<span>Término do algoritmo</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Término_do_algoritmo-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Exemplos"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Exemplos">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Exemplos</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Exemplos-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Alternar a subsecção Exemplos</span>
+			</button>
+		
+		<ul id="toc-Exemplos-sublist" class="vector-toc-list">
+			<li id="toc-Torre_de_Hanói"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Torre_de_Hanói">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.1</span>
+					<span>Torre de Hanói</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Torre_de_Hanói-sublist" class="vector-toc-list">
+				<li id="toc-Solução_em_forma_narrativa"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Solução_em_forma_narrativa">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.1.1</span>
+					<span>Solução em forma narrativa</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Solução_em_forma_narrativa-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Solução_em_forma_gráfica"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Solução_em_forma_gráfica">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.1.2</span>
+					<span>Solução em forma gráfica</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Solução_em_forma_gráfica-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Análise_de_algoritmos"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Análise_de_algoritmos">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Análise de algoritmos</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Análise_de_algoritmos-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Classificação"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Classificação">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>Classificação</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Classificação-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Alternar a subsecção Classificação</span>
+			</button>
+		
+		<ul id="toc-Classificação-sublist" class="vector-toc-list">
+			<li id="toc-Classificação_por_implementação"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Classificação_por_implementação">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">5.1</span>
+					<span>Classificação por implementação</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Classificação_por_implementação-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Classificação_por_paradigma"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Classificação_por_paradigma">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">5.2</span>
+					<span>Classificação por paradigma</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Classificação_por_paradigma-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Classificação_por_campo_de_estudo"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Classificação_por_campo_de_estudo">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">5.3</span>
+					<span>Classificação por campo de estudo</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Classificação_por_campo_de_estudo-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Classificação_por_complexidade"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Classificação_por_complexidade">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">5.4</span>
+					<span>Classificação por complexidade</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Classificação_por_complexidade-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Implementação"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Implementação">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>Implementação</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Implementação-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Ver_também"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Ver_também">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>Ver também</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Ver_também-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Referências"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Referências">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">8</span>
+				<span>Referências</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Referências-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Bibliografia"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Bibliografia">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">9</span>
+				<span>Bibliografia</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Bibliografia-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Ligações_externas"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Ligações_externas">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">10</span>
+				<span>Ligações externas</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Ligações_externas-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav aria-label="Conteúdo" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Índice" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Alternar o índice"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Alternar o índice</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Algoritmo</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Ir para um artigo noutra língua. Disponível em 132 línguas"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-132" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">132 línguas</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-af mw-list-item"><a href="https://af.wikipedia.org/wiki/Algoritme" title="Algoritme — africanês" lang="af" hreflang="af" data-title="Algoritme" data-language-autonym="Afrikaans" data-language-local-name="africanês" class="interlanguage-link-target"><span>Afrikaans</span></a></li><li class="interlanguage-link interwiki-als mw-list-item"><a href="https://als.wikipedia.org/wiki/Algorithmus" title="Algorithmus — alemão suíço" lang="gsw" hreflang="gsw" data-title="Algorithmus" data-language-autonym="Alemannisch" data-language-local-name="alemão suíço" class="interlanguage-link-target"><span>Alemannisch</span></a></li><li class="interlanguage-link interwiki-am mw-list-item"><a href="https://am.wikipedia.org/wiki/%E1%8A%A0%E1%88%8D%E1%8C%8E%E1%88%AA%E1%8B%9D%E1%88%9D" title="አልጎሪዝም — amárico" lang="am" hreflang="am" data-title="አልጎሪዝም" data-language-autonym="አማርኛ" data-language-local-name="amárico" class="interlanguage-link-target"><span>አማርኛ</span></a></li><li class="interlanguage-link interwiki-an mw-list-item"><a href="https://an.wikipedia.org/wiki/Algorismo" title="Algorismo — aragonês" lang="an" hreflang="an" data-title="Algorismo" data-language-autonym="Aragonés" data-language-local-name="aragonês" class="interlanguage-link-target"><span>Aragonés</span></a></li><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9" title="خوارزمية — árabe" lang="ar" hreflang="ar" data-title="خوارزمية" data-language-autonym="العربية" data-language-local-name="árabe" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-arz mw-list-item"><a href="https://arz.wikipedia.org/wiki/%D8%A7%D9%84%D8%AC%D9%88%D8%B1%D9%8A%D8%B2%D9%85" title="الجوريزم — Egyptian Arabic" lang="arz" hreflang="arz" data-title="الجوريزم" data-language-autonym="مصرى" data-language-local-name="Egyptian Arabic" class="interlanguage-link-target"><span>مصرى</span></a></li><li class="interlanguage-link interwiki-as mw-list-item"><a href="https://as.wikipedia.org/wiki/%E0%A6%8F%E0%A6%B2%E0%A6%97%E0%A7%B0%E0%A6%BF%E0%A6%A5%E0%A6%AE_%E0%A6%86%E0%A7%B0%E0%A7%81_%E0%A6%A1%E0%A7%87%E0%A6%87%E0%A6%9F%E0%A6%BE_%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A7%B0%E0%A6%BE%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A7%B0" title="এলগৰিথম আৰু ডেইটা ষ্ট্ৰাকচাৰ — assamês" lang="as" hreflang="as" data-title="এলগৰিথম আৰু ডেইটা ষ্ট্ৰাকচাৰ" data-language-autonym="অসমীয়া" data-language-local-name="assamês" class="interlanguage-link-target"><span>অসমীয়া</span></a></li><li class="interlanguage-link interwiki-ast mw-list-item"><a href="https://ast.wikipedia.org/wiki/Algoritmu" title="Algoritmu — asturiano" lang="ast" hreflang="ast" data-title="Algoritmu" data-language-autonym="Asturianu" data-language-local-name="asturiano" class="interlanguage-link-target"><span>Asturianu</span></a></li><li class="interlanguage-link interwiki-az mw-list-item"><a href="https://az.wikipedia.org/wiki/Alqoritm" title="Alqoritm — azerbaijano" lang="az" hreflang="az" data-title="Alqoritm" data-language-autonym="Azərbaycanca" data-language-local-name="azerbaijano" class="interlanguage-link-target"><span>Azərbaycanca</span></a></li><li class="interlanguage-link interwiki-azb mw-list-item"><a href="https://azb.wikipedia.org/wiki/%D8%A7%D9%84%D9%82%D9%88%D8%B1%DB%8C%D8%AA%D9%85" title="القوریتم — South Azerbaijani" lang="azb" hreflang="azb" data-title="القوریتم" data-language-autonym="تۆرکجه" data-language-local-name="South Azerbaijani" class="interlanguage-link-target"><span>تۆرکجه</span></a></li><li class="interlanguage-link interwiki-ba mw-list-item"><a href="https://ba.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм — bashkir" lang="ba" hreflang="ba" data-title="Алгоритм" data-language-autonym="Башҡортса" data-language-local-name="bashkir" class="interlanguage-link-target"><span>Башҡортса</span></a></li><li class="interlanguage-link interwiki-bat-smg mw-list-item"><a href="https://bat-smg.wikipedia.org/wiki/Alguor%C4%97tmos" title="Alguorėtmos — Samogitian" lang="sgs" hreflang="sgs" data-title="Alguorėtmos" data-language-autonym="Žemaitėška" data-language-local-name="Samogitian" class="interlanguage-link-target"><span>Žemaitėška</span></a></li><li class="interlanguage-link interwiki-bcl mw-list-item"><a href="https://bcl.wikipedia.org/wiki/Algoritmo" title="Algoritmo — Central Bikol" lang="bcl" hreflang="bcl" data-title="Algoritmo" data-language-autonym="Bikol Central" data-language-local-name="Central Bikol" class="interlanguage-link-target"><span>Bikol Central</span></a></li><li class="interlanguage-link interwiki-be mw-list-item"><a href="https://be.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%B0%D1%80%D1%8B%D1%82%D0%BC" title="Алгарытм — bielorrusso" lang="be" hreflang="be" data-title="Алгарытм" data-language-autonym="Беларуская" data-language-local-name="bielorrusso" class="interlanguage-link-target"><span>Беларуская</span></a></li><li class="interlanguage-link interwiki-be-x-old mw-list-item"><a href="https://be-tarask.wikipedia.org/wiki/%D0%90%D0%BB%D1%8C%D0%B3%D0%B0%D1%80%D1%8B%D1%82%D0%BC" title="Альгарытм — Belarusian (Taraškievica orthography)" lang="be-tarask" hreflang="be-tarask" data-title="Альгарытм" data-language-autonym="Беларуская (тарашкевіца)" data-language-local-name="Belarusian (Taraškievica orthography)" class="interlanguage-link-target"><span>Беларуская (тарашкевіца)</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D1%8A%D0%BC" title="Алгоритъм — búlgaro" lang="bg" hreflang="bg" data-title="Алгоритъм" data-language-autonym="Български" data-language-local-name="búlgaro" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-bn mw-list-item"><a href="https://bn.wikipedia.org/wiki/%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%97%E0%A6%B0%E0%A6%BF%E0%A6%A6%E0%A6%AE" title="অ্যালগরিদম — bengalês" lang="bn" hreflang="bn" data-title="অ্যালগরিদম" data-language-autonym="বাংলা" data-language-local-name="bengalês" class="interlanguage-link-target"><span>বাংলা</span></a></li><li class="interlanguage-link interwiki-bo mw-list-item"><a href="https://bo.wikipedia.org/wiki/%E0%BD%A8%E0%BD%A3%E0%BC%8B%E0%BD%82%E0%BE%B7%E0%BD%BC%E0%BD%A2%E0%BC%8B%E0%BD%A3%E0%BC%8B%E0%BD%A6%E0%BD%BA%E0%BD%A3%E0%BC%8B%E0%BD%A2%E0%BE%A9%E0%BD%B2%E0%BD%A6%E0%BC%8D" title="ཨལ་གྷོར་ལ་སེལ་རྩིས། — tibetano" lang="bo" hreflang="bo" data-title="ཨལ་གྷོར་ལ་སེལ་རྩིས།" data-language-autonym="བོད་ཡིག" data-language-local-name="tibetano" class="interlanguage-link-target"><span>བོད་ཡིག</span></a></li><li class="interlanguage-link interwiki-br mw-list-item"><a href="https://br.wikipedia.org/wiki/Algoritm" title="Algoritm — bretão" lang="br" hreflang="br" data-title="Algoritm" data-language-autonym="Brezhoneg" data-language-local-name="bretão" class="interlanguage-link-target"><span>Brezhoneg</span></a></li><li class="interlanguage-link interwiki-bs mw-list-item"><a href="https://bs.wikipedia.org/wiki/Algoritam" title="Algoritam — bósnio" lang="bs" hreflang="bs" data-title="Algoritam" data-language-autonym="Bosanski" data-language-local-name="bósnio" class="interlanguage-link-target"><span>Bosanski</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Algorisme" title="Algorisme — catalão" lang="ca" hreflang="ca" data-title="Algorisme" data-language-autonym="Català" data-language-local-name="catalão" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-ckb mw-list-item"><a href="https://ckb.wikipedia.org/wiki/%D8%A6%DB%95%D9%84%DA%AF%DB%86%D8%B1%DB%8C%D8%AA%D9%85" title="ئەلگۆریتم — curdo central" lang="ckb" hreflang="ckb" data-title="ئەلگۆریتم" data-language-autonym="کوردی" data-language-local-name="curdo central" class="interlanguage-link-target"><span>کوردی</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Algoritmus" title="Algoritmus — checo" lang="cs" hreflang="cs" data-title="Algoritmus" data-language-autonym="Čeština" data-language-local-name="checo" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-cu mw-list-item"><a href="https://cu.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D1%B7%D1%B3%D0%BC%D1%8A" title="Алгорѷѳмъ — eslavo eclesiástico" lang="cu" hreflang="cu" data-title="Алгорѷѳмъ" data-language-autonym="Словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ" data-language-local-name="eslavo eclesiástico" class="interlanguage-link-target"><span>Словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ</span></a></li><li class="interlanguage-link interwiki-cy mw-list-item"><a href="https://cy.wikipedia.org/wiki/Algorithm" title="Algorithm — galês" lang="cy" hreflang="cy" data-title="Algorithm" data-language-autonym="Cymraeg" data-language-local-name="galês" class="interlanguage-link-target"><span>Cymraeg</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a href="https://da.wikipedia.org/wiki/Algoritme" title="Algoritme — dinamarquês" lang="da" hreflang="da" data-title="Algoritme" data-language-autonym="Dansk" data-language-local-name="dinamarquês" class="interlanguage-link-target"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Algorithmus" title="Algorithmus — alemão" lang="de" hreflang="de" data-title="Algorithmus" data-language-autonym="Deutsch" data-language-local-name="alemão" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-diq mw-list-item"><a href="https://diq.wikipedia.org/wiki/Algoritma" title="Algoritma — Dimli" lang="diq" hreflang="diq" data-title="Algoritma" data-language-autonym="Zazaki" data-language-local-name="Dimli" class="interlanguage-link-target"><span>Zazaki</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%91%CE%BB%CE%B3%CF%8C%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CF%82" title="Αλγόριθμος — grego" lang="el" hreflang="el" data-title="Αλγόριθμος" data-language-autonym="Ελληνικά" data-language-local-name="grego" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a href="https://en.wikipedia.org/wiki/Algorithm" title="Algorithm — inglês" lang="en" hreflang="en" data-title="Algorithm" data-language-autonym="English" data-language-local-name="inglês" class="interlanguage-link-target"><span>English</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a href="https://eo.wikipedia.org/wiki/Algoritmo" title="Algoritmo — esperanto" lang="eo" hreflang="eo" data-title="Algoritmo" data-language-autonym="Esperanto" data-language-local-name="esperanto" class="interlanguage-link-target"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Algoritmo" title="Algoritmo — espanhol" lang="es" hreflang="es" data-title="Algoritmo" data-language-autonym="Español" data-language-local-name="espanhol" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wikipedia.org/wiki/Algoritm" title="Algoritm — estónio" lang="et" hreflang="et" data-title="Algoritm" data-language-autonym="Eesti" data-language-local-name="estónio" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a href="https://eu.wikipedia.org/wiki/Algoritmo" title="Algoritmo — basco" lang="eu" hreflang="eu" data-title="Algoritmo" data-language-autonym="Euskara" data-language-local-name="basco" class="interlanguage-link-target"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85" title="الگوریتم — persa" lang="fa" hreflang="fa" data-title="الگوریتم" data-language-autonym="فارسی" data-language-local-name="persa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Algoritmi" title="Algoritmi — finlandês" lang="fi" hreflang="fi" data-title="Algoritmi" data-language-autonym="Suomi" data-language-local-name="finlandês" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-fo mw-list-item"><a href="https://fo.wikipedia.org/wiki/Algoritma" title="Algoritma — feroês" lang="fo" hreflang="fo" data-title="Algoritma" data-language-autonym="Føroyskt" data-language-local-name="feroês" class="interlanguage-link-target"><span>Føroyskt</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Algorithme" title="Algorithme — francês" lang="fr" hreflang="fr" data-title="Algorithme" data-language-autonym="Français" data-language-local-name="francês" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-frr mw-list-item"><a href="https://frr.wikipedia.org/wiki/Algoritmus" title="Algoritmus — frísio setentrional" lang="frr" hreflang="frr" data-title="Algoritmus" data-language-autonym="Nordfriisk" data-language-local-name="frísio setentrional" class="interlanguage-link-target"><span>Nordfriisk</span></a></li><li class="interlanguage-link interwiki-ga mw-list-item"><a href="https://ga.wikipedia.org/wiki/Algartam" title="Algartam — irlandês" lang="ga" hreflang="ga" data-title="Algartam" data-language-autonym="Gaeilge" data-language-local-name="irlandês" class="interlanguage-link-target"><span>Gaeilge</span></a></li><li class="interlanguage-link interwiki-gcr mw-list-item"><a href="https://gcr.wikipedia.org/wiki/Algoritm" title="Algoritm — Guianan Creole" lang="gcr" hreflang="gcr" data-title="Algoritm" data-language-autonym="Kriyòl gwiyannen" data-language-local-name="Guianan Creole" class="interlanguage-link-target"><span>Kriyòl gwiyannen</span></a></li><li class="interlanguage-link interwiki-gl mw-list-item"><a href="https://gl.wikipedia.org/wiki/Algoritmo" title="Algoritmo — galego" lang="gl" hreflang="gl" data-title="Algoritmo" data-language-autonym="Galego" data-language-local-name="galego" class="interlanguage-link-target"><span>Galego</span></a></li><li class="interlanguage-link interwiki-gn mw-list-item"><a href="https://gn.wikipedia.org/wiki/Algoritmo" title="Algoritmo — guarani" lang="gn" hreflang="gn" data-title="Algoritmo" data-language-autonym="Avañe&#039;ẽ" data-language-local-name="guarani" class="interlanguage-link-target"><span>Avañe&#039;ẽ</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D" title="אלגוריתם — hebraico" lang="he" hreflang="he" data-title="אלגוריתם" data-language-autonym="עברית" data-language-local-name="hebraico" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hi mw-list-item"><a href="https://hi.wikipedia.org/wiki/%E0%A4%85%E0%A4%B2%E0%A5%8D%E0%A4%97%E0%A5%8B%E0%A4%B0%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%AE" title="अल्गोरिद्म — hindi" lang="hi" hreflang="hi" data-title="अल्गोरिद्म" data-language-autonym="हिन्दी" data-language-local-name="hindi" class="interlanguage-link-target"><span>हिन्दी</span></a></li><li class="interlanguage-link interwiki-hif mw-list-item"><a href="https://hif.wikipedia.org/wiki/Algorithm" title="Algorithm — Fiji Hindi" lang="hif" hreflang="hif" data-title="Algorithm" data-language-autonym="Fiji Hindi" data-language-local-name="Fiji Hindi" class="interlanguage-link-target"><span>Fiji Hindi</span></a></li><li class="interlanguage-link interwiki-hr mw-list-item"><a href="https://hr.wikipedia.org/wiki/Algoritam" title="Algoritam — croata" lang="hr" hreflang="hr" data-title="Algoritam" data-language-autonym="Hrvatski" data-language-local-name="croata" class="interlanguage-link-target"><span>Hrvatski</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Algoritmus" title="Algoritmus — húngaro" lang="hu" hreflang="hu" data-title="Algoritmus" data-language-autonym="Magyar" data-language-local-name="húngaro" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-hy mw-list-item"><a href="https://hy.wikipedia.org/wiki/%D4%B1%D5%AC%D5%A3%D5%B8%D6%80%D5%AB%D5%A9%D5%B4" title="Ալգորիթմ — arménio" lang="hy" hreflang="hy" data-title="Ալգորիթմ" data-language-autonym="Հայերեն" data-language-local-name="arménio" class="interlanguage-link-target"><span>Հայերեն</span></a></li><li class="interlanguage-link interwiki-ia mw-list-item"><a href="https://ia.wikipedia.org/wiki/Algorithmo" title="Algorithmo — interlíngua" lang="ia" hreflang="ia" data-title="Algorithmo" data-language-autonym="Interlingua" data-language-local-name="interlíngua" class="interlanguage-link-target"><span>Interlingua</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Algoritma" title="Algoritma — indonésio" lang="id" hreflang="id" data-title="Algoritma" data-language-autonym="Bahasa Indonesia" data-language-local-name="indonésio" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-ilo mw-list-item"><a href="https://ilo.wikipedia.org/wiki/Algoritmo" title="Algoritmo — ilocano" lang="ilo" hreflang="ilo" data-title="Algoritmo" data-language-autonym="Ilokano" data-language-local-name="ilocano" class="interlanguage-link-target"><span>Ilokano</span></a></li><li class="interlanguage-link interwiki-io mw-list-item"><a href="https://io.wikipedia.org/wiki/Algoritmo" title="Algoritmo — ido" lang="io" hreflang="io" data-title="Algoritmo" data-language-autonym="Ido" data-language-local-name="ido" class="interlanguage-link-target"><span>Ido</span></a></li><li class="interlanguage-link interwiki-is mw-list-item"><a href="https://is.wikipedia.org/wiki/Reiknirit" title="Reiknirit — islandês" lang="is" hreflang="is" data-title="Reiknirit" data-language-autonym="Íslenska" data-language-local-name="islandês" class="interlanguage-link-target"><span>Íslenska</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Algoritmo" title="Algoritmo — italiano" lang="it" hreflang="it" data-title="Algoritmo" data-language-autonym="Italiano" data-language-local-name="italiano" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="アルゴリズム — japonês" lang="ja" hreflang="ja" data-title="アルゴリズム" data-language-autonym="日本語" data-language-local-name="japonês" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-jv mw-list-item"><a href="https://jv.wikipedia.org/wiki/Algoritma" title="Algoritma — javanês" lang="jv" hreflang="jv" data-title="Algoritma" data-language-autonym="Jawa" data-language-local-name="javanês" class="interlanguage-link-target"><span>Jawa</span></a></li><li class="interlanguage-link interwiki-ka mw-list-item"><a href="https://ka.wikipedia.org/wiki/%E1%83%90%E1%83%9A%E1%83%92%E1%83%9D%E1%83%A0%E1%83%98%E1%83%97%E1%83%9B%E1%83%98" title="ალგორითმი — georgiano" lang="ka" hreflang="ka" data-title="ალგორითმი" data-language-autonym="ქართული" data-language-local-name="georgiano" class="interlanguage-link-target"><span>ქართული</span></a></li><li class="interlanguage-link interwiki-kaa mw-list-item"><a href="https://kaa.wikipedia.org/wiki/Algoritm" title="Algoritm — kara-kalpak" lang="kaa" hreflang="kaa" data-title="Algoritm" data-language-autonym="Qaraqalpaqsha" data-language-local-name="kara-kalpak" class="interlanguage-link-target"><span>Qaraqalpaqsha</span></a></li><li class="interlanguage-link interwiki-kab mw-list-item"><a href="https://kab.wikipedia.org/wiki/Alguritm" title="Alguritm — kabyle" lang="kab" hreflang="kab" data-title="Alguritm" data-language-autonym="Taqbaylit" data-language-local-name="kabyle" class="interlanguage-link-target"><span>Taqbaylit</span></a></li><li class="interlanguage-link interwiki-ki mw-list-item"><a href="https://ki.wikipedia.org/wiki/Algorithm" title="Algorithm — quicuio" lang="ki" hreflang="ki" data-title="Algorithm" data-language-autonym="Gĩkũyũ" data-language-local-name="quicuio" class="interlanguage-link-target"><span>Gĩkũyũ</span></a></li><li class="interlanguage-link interwiki-kk mw-list-item"><a href="https://kk.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм — cazaque" lang="kk" hreflang="kk" data-title="Алгоритм" data-language-autonym="Қазақша" data-language-local-name="cazaque" class="interlanguage-link-target"><span>Қазақша</span></a></li><li class="interlanguage-link interwiki-kn mw-list-item"><a href="https://kn.wikipedia.org/wiki/%E0%B2%86%E0%B2%B2%E0%B3%8D%E0%B2%97%E0%B2%BE%E0%B2%B0%E0%B2%BF%E0%B2%A4%E0%B2%82" title="ಆಲ್ಗಾರಿತಂ — canarim" lang="kn" hreflang="kn" data-title="ಆಲ್ಗಾರಿತಂ" data-language-autonym="ಕನ್ನಡ" data-language-local-name="canarim" class="interlanguage-link-target"><span>ಕನ್ನಡ</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" title="알고리즘 — coreano" lang="ko" hreflang="ko" data-title="알고리즘" data-language-autonym="한국어" data-language-local-name="coreano" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-ku mw-list-item"><a href="https://ku.wikipedia.org/wiki/Algor%C3%AEtma" title="Algorîtma — curdo" lang="ku" hreflang="ku" data-title="Algorîtma" data-language-autonym="Kurdî" data-language-local-name="curdo" class="interlanguage-link-target"><span>Kurdî</span></a></li><li class="interlanguage-link interwiki-ky mw-list-item"><a href="https://ky.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм — quirguiz" lang="ky" hreflang="ky" data-title="Алгоритм" data-language-autonym="Кыргызча" data-language-local-name="quirguiz" class="interlanguage-link-target"><span>Кыргызча</span></a></li><li class="interlanguage-link interwiki-la mw-list-item"><a href="https://la.wikipedia.org/wiki/Algorithmus" title="Algorithmus — latim" lang="la" hreflang="la" data-title="Algorithmus" data-language-autonym="Latina" data-language-local-name="latim" class="interlanguage-link-target"><span>Latina</span></a></li><li class="interlanguage-link interwiki-lb mw-list-item"><a href="https://lb.wikipedia.org/wiki/Algorithmus" title="Algorithmus — luxemburguês" lang="lb" hreflang="lb" data-title="Algorithmus" data-language-autonym="Lëtzebuergesch" data-language-local-name="luxemburguês" class="interlanguage-link-target"><span>Lëtzebuergesch</span></a></li><li class="interlanguage-link interwiki-lfn mw-list-item"><a href="https://lfn.wikipedia.org/wiki/Algoritmo" title="Algoritmo — Lingua Franca Nova" lang="lfn" hreflang="lfn" data-title="Algoritmo" data-language-autonym="Lingua Franca Nova" data-language-local-name="Lingua Franca Nova" class="interlanguage-link-target"><span>Lingua Franca Nova</span></a></li><li class="interlanguage-link interwiki-lmo mw-list-item"><a href="https://lmo.wikipedia.org/wiki/Algoritm" title="Algoritm — lombardo" lang="lmo" hreflang="lmo" data-title="Algoritm" data-language-autonym="Lombard" data-language-local-name="lombardo" class="interlanguage-link-target"><span>Lombard</span></a></li><li class="interlanguage-link interwiki-lo mw-list-item"><a href="https://lo.wikipedia.org/wiki/%E0%BA%82%E0%BA%B1%E0%BB%89%E0%BA%99%E0%BA%95%E0%BA%AD%E0%BA%99%E0%BA%A7%E0%BA%B4%E0%BA%97%E0%BA%B5" title="ຂັ້ນຕອນວິທີ — laosiano" lang="lo" hreflang="lo" data-title="ຂັ້ນຕອນວິທີ" data-language-autonym="ລາວ" data-language-local-name="laosiano" class="interlanguage-link-target"><span>ລາວ</span></a></li><li class="interlanguage-link interwiki-lt mw-list-item"><a href="https://lt.wikipedia.org/wiki/Algoritmas" title="Algoritmas — lituano" lang="lt" hreflang="lt" data-title="Algoritmas" data-language-autonym="Lietuvių" data-language-local-name="lituano" class="interlanguage-link-target"><span>Lietuvių</span></a></li><li class="interlanguage-link interwiki-lv mw-list-item"><a href="https://lv.wikipedia.org/wiki/Algoritms" title="Algoritms — letão" lang="lv" hreflang="lv" data-title="Algoritms" data-language-autonym="Latviešu" data-language-local-name="letão" class="interlanguage-link-target"><span>Latviešu</span></a></li><li class="interlanguage-link interwiki-mhr mw-list-item"><a href="https://mhr.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм — Eastern Mari" lang="mhr" hreflang="mhr" data-title="Алгоритм" data-language-autonym="Олык марий" data-language-local-name="Eastern Mari" class="interlanguage-link-target"><span>Олык марий</span></a></li><li class="interlanguage-link interwiki-mk mw-list-item"><a href="https://mk.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%B0%D0%BC" title="Алгоритам — macedónio" lang="mk" hreflang="mk" data-title="Алгоритам" data-language-autonym="Македонски" data-language-local-name="macedónio" class="interlanguage-link-target"><span>Македонски</span></a></li><li class="interlanguage-link interwiki-ml mw-list-item"><a href="https://ml.wikipedia.org/wiki/%E0%B4%85%E0%B5%BD%E0%B4%97%E0%B5%8A%E0%B4%B0%E0%B4%BF%E0%B4%A4%E0%B4%82" title="അൽഗൊരിതം — malaiala" lang="ml" hreflang="ml" data-title="അൽഗൊരിതം" data-language-autonym="മലയാളം" data-language-local-name="malaiala" class="interlanguage-link-target"><span>മലയാളം</span></a></li><li class="interlanguage-link interwiki-mn mw-list-item"><a href="https://mn.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм — mongol" lang="mn" hreflang="mn" data-title="Алгоритм" data-language-autonym="Монгол" data-language-local-name="mongol" class="interlanguage-link-target"><span>Монгол</span></a></li><li class="interlanguage-link interwiki-mr mw-list-item"><a href="https://mr.wikipedia.org/wiki/%E0%A4%85%E0%A4%B2%E0%A5%8D%E0%A4%97%E0%A5%8B%E0%A4%B0%E0%A4%BF%E0%A4%A6%E0%A4%AE" title="अल्गोरिदम — marata" lang="mr" hreflang="mr" data-title="अल्गोरिदम" data-language-autonym="मराठी" data-language-local-name="marata" class="interlanguage-link-target"><span>मराठी</span></a></li><li class="interlanguage-link interwiki-ms mw-list-item"><a href="https://ms.wikipedia.org/wiki/Algoritma" title="Algoritma — malaio" lang="ms" hreflang="ms" data-title="Algoritma" data-language-autonym="Bahasa Melayu" data-language-local-name="malaio" class="interlanguage-link-target"><span>Bahasa Melayu</span></a></li><li class="interlanguage-link interwiki-mwl mw-list-item"><a href="https://mwl.wikipedia.org/wiki/Algoritmo" title="Algoritmo — mirandês" lang="mwl" hreflang="mwl" data-title="Algoritmo" data-language-autonym="Mirandés" data-language-local-name="mirandês" class="interlanguage-link-target"><span>Mirandés</span></a></li><li class="interlanguage-link interwiki-my mw-list-item"><a href="https://my.wikipedia.org/wiki/%E1%80%A1%E1%80%86%E1%80%84%E1%80%B7%E1%80%BA%E1%80%86%E1%80%84%E1%80%B7%E1%80%BA%E1%80%90%E1%80%BD%E1%80%80%E1%80%BA%E1%80%94%E1%80%8A%E1%80%BA%E1%80%B8" title="အဆင့်ဆင့်တွက်နည်း — birmanês" lang="my" hreflang="my" data-title="အဆင့်ဆင့်တွက်နည်း" data-language-autonym="မြန်မာဘာသာ" data-language-local-name="birmanês" class="interlanguage-link-target"><span>မြန်မာဘာသာ</span></a></li><li class="interlanguage-link interwiki-nds mw-list-item"><a href="https://nds.wikipedia.org/wiki/Algorithmus" title="Algorithmus — baixo-alemão" lang="nds" hreflang="nds" data-title="Algorithmus" data-language-autonym="Plattdüütsch" data-language-local-name="baixo-alemão" class="interlanguage-link-target"><span>Plattdüütsch</span></a></li><li class="interlanguage-link interwiki-ne mw-list-item"><a href="https://ne.wikipedia.org/wiki/%E0%A4%85%E0%A4%B2%E0%A5%8D%E0%A4%97%E0%A5%8B%E0%A4%B0%E0%A4%BF%E0%A4%A6%E0%A4%AE" title="अल्गोरिदम — nepalês" lang="ne" hreflang="ne" data-title="अल्गोरिदम" data-language-autonym="नेपाली" data-language-local-name="nepalês" class="interlanguage-link-target"><span>नेपाली</span></a></li><li class="interlanguage-link interwiki-new mw-list-item"><a href="https://new.wikipedia.org/wiki/%E0%A4%85%E0%A4%B2%E0%A5%8D%E0%A4%97%E0%A5%8B%E0%A4%B0%E0%A4%BF%E0%A4%A5%E0%A4%AE" title="अल्गोरिथम — newari" lang="new" hreflang="new" data-title="अल्गोरिथम" data-language-autonym="नेपाल भाषा" data-language-local-name="newari" class="interlanguage-link-target"><span>नेपाल भाषा</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Algoritme" title="Algoritme — neerlandês" lang="nl" hreflang="nl" data-title="Algoritme" data-language-autonym="Nederlands" data-language-local-name="neerlandês" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-nn mw-list-item"><a href="https://nn.wikipedia.org/wiki/Algoritme" title="Algoritme — norueguês nynorsk" lang="nn" hreflang="nn" data-title="Algoritme" data-language-autonym="Norsk nynorsk" data-language-local-name="norueguês nynorsk" class="interlanguage-link-target"><span>Norsk nynorsk</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Algoritme" title="Algoritme — norueguês bokmål" lang="nb" hreflang="nb" data-title="Algoritme" data-language-autonym="Norsk bokmål" data-language-local-name="norueguês bokmål" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-oc mw-list-item"><a href="https://oc.wikipedia.org/wiki/Algoritme" title="Algoritme — occitano" lang="oc" hreflang="oc" data-title="Algoritme" data-language-autonym="Occitan" data-language-local-name="occitano" class="interlanguage-link-target"><span>Occitan</span></a></li><li class="interlanguage-link interwiki-om mw-list-item"><a href="https://om.wikipedia.org/wiki/Seermurtoo" title="Seermurtoo — oromo" lang="om" hreflang="om" data-title="Seermurtoo" data-language-autonym="Oromoo" data-language-local-name="oromo" class="interlanguage-link-target"><span>Oromoo</span></a></li><li class="interlanguage-link interwiki-pa mw-list-item"><a href="https://pa.wikipedia.org/wiki/%E0%A8%95%E0%A8%B2%E0%A8%A8_%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A9%80" title="ਕਲਨ ਵਿਧੀ — panjabi" lang="pa" hreflang="pa" data-title="ਕਲਨ ਵਿਧੀ" data-language-autonym="ਪੰਜਾਬੀ" data-language-local-name="panjabi" class="interlanguage-link-target"><span>ਪੰਜਾਬੀ</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Algorytm" title="Algorytm — polaco" lang="pl" hreflang="pl" data-title="Algorytm" data-language-autonym="Polski" data-language-local-name="polaco" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pms mw-list-item"><a href="https://pms.wikipedia.org/wiki/Algoritm" title="Algoritm — Piedmontese" lang="pms" hreflang="pms" data-title="Algoritm" data-language-autonym="Piemontèis" data-language-local-name="Piedmontese" class="interlanguage-link-target"><span>Piemontèis</span></a></li><li class="interlanguage-link interwiki-pnb mw-list-item"><a href="https://pnb.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%D8%AA%DA%BE%D9%85" title="الگورتھم — Western Punjabi" lang="pnb" hreflang="pnb" data-title="الگورتھم" data-language-autonym="پنجابی" data-language-local-name="Western Punjabi" class="interlanguage-link-target"><span>پنجابی</span></a></li><li class="interlanguage-link interwiki-qu mw-list-item"><a href="https://qu.wikipedia.org/wiki/Allquritmu" title="Allquritmu — quíchua" lang="qu" hreflang="qu" data-title="Allquritmu" data-language-autonym="Runa Simi" data-language-local-name="quíchua" class="interlanguage-link-target"><span>Runa Simi</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a href="https://ro.wikipedia.org/wiki/Algoritm" title="Algoritm — romeno" lang="ro" hreflang="ro" data-title="Algoritm" data-language-autonym="Română" data-language-local-name="romeno" class="interlanguage-link-target"><span>Română</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм — russo" lang="ru" hreflang="ru" data-title="Алгоритм" data-language-autonym="Русский" data-language-local-name="russo" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-rue mw-list-item"><a href="https://rue.wikipedia.org/wiki/%D0%90%D0%BB%D2%91%D0%BE%D1%80%D1%96%D1%82%D0%BC" title="Алґорітм — Rusyn" lang="rue" hreflang="rue" data-title="Алґорітм" data-language-autonym="Русиньскый" data-language-local-name="Rusyn" class="interlanguage-link-target"><span>Русиньскый</span></a></li><li class="interlanguage-link interwiki-sah mw-list-item"><a href="https://sah.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм — sakha" lang="sah" hreflang="sah" data-title="Алгоритм" data-language-autonym="Саха тыла" data-language-local-name="sakha" class="interlanguage-link-target"><span>Саха тыла</span></a></li><li class="interlanguage-link interwiki-sc mw-list-item"><a href="https://sc.wikipedia.org/wiki/Algoritmu" title="Algoritmu — sardo" lang="sc" hreflang="sc" data-title="Algoritmu" data-language-autonym="Sardu" data-language-local-name="sardo" class="interlanguage-link-target"><span>Sardu</span></a></li><li class="interlanguage-link interwiki-scn mw-list-item"><a href="https://scn.wikipedia.org/wiki/Alguritmu" title="Alguritmu — siciliano" lang="scn" hreflang="scn" data-title="Alguritmu" data-language-autonym="Sicilianu" data-language-local-name="siciliano" class="interlanguage-link-target"><span>Sicilianu</span></a></li><li class="interlanguage-link interwiki-sco mw-list-item"><a href="https://sco.wikipedia.org/wiki/Algorithm" title="Algorithm — scots" lang="sco" hreflang="sco" data-title="Algorithm" data-language-autonym="Scots" data-language-local-name="scots" class="interlanguage-link-target"><span>Scots</span></a></li><li class="interlanguage-link interwiki-sh mw-list-item"><a href="https://sh.wikipedia.org/wiki/Algoritam" title="Algoritam — servo-croata" lang="sh" hreflang="sh" data-title="Algoritam" data-language-autonym="Srpskohrvatski / српскохрватски" data-language-local-name="servo-croata" class="interlanguage-link-target"><span>Srpskohrvatski / српскохрватски</span></a></li><li class="interlanguage-link interwiki-si mw-list-item"><a href="https://si.wikipedia.org/wiki/%E0%B6%87%E0%B6%BD%E0%B7%8A%E0%B6%9C%E0%B7%9C%E0%B6%BB%E0%B7%92%E0%B6%AD%E0%B6%B8" title="ඇල්ගොරිතම — cingalês" lang="si" hreflang="si" data-title="ඇල්ගොරිතම" data-language-autonym="සිංහල" data-language-local-name="cingalês" class="interlanguage-link-target"><span>සිංහල</span></a></li><li class="interlanguage-link interwiki-simple mw-list-item"><a href="https://simple.wikipedia.org/wiki/Algorithm" title="Algorithm — Simple English" lang="en-simple" hreflang="en-simple" data-title="Algorithm" data-language-autonym="Simple English" data-language-local-name="Simple English" class="interlanguage-link-target"><span>Simple English</span></a></li><li class="interlanguage-link interwiki-sk mw-list-item"><a href="https://sk.wikipedia.org/wiki/Algoritmus" title="Algoritmus — eslovaco" lang="sk" hreflang="sk" data-title="Algoritmus" data-language-autonym="Slovenčina" data-language-local-name="eslovaco" class="interlanguage-link-target"><span>Slovenčina</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Algoritem" title="Algoritem — esloveno" lang="sl" hreflang="sl" data-title="Algoritem" data-language-autonym="Slovenščina" data-language-local-name="esloveno" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-sn mw-list-item"><a href="https://sn.wikipedia.org/wiki/Gwarazima" title="Gwarazima — shona" lang="sn" hreflang="sn" data-title="Gwarazima" data-language-autonym="ChiShona" data-language-local-name="shona" class="interlanguage-link-target"><span>ChiShona</span></a></li><li class="interlanguage-link interwiki-sq mw-list-item"><a href="https://sq.wikipedia.org/wiki/Algoritmi" title="Algoritmi — albanês" lang="sq" hreflang="sq" data-title="Algoritmi" data-language-autonym="Shqip" data-language-local-name="albanês" class="interlanguage-link-target"><span>Shqip</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%B0%D0%BC" title="Алгоритам — sérvio" lang="sr" hreflang="sr" data-title="Алгоритам" data-language-autonym="Српски / srpski" data-language-local-name="sérvio" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-su mw-list-item"><a href="https://su.wikipedia.org/wiki/Algoritma" title="Algoritma — sundanês" lang="su" hreflang="su" data-title="Algoritma" data-language-autonym="Sunda" data-language-local-name="sundanês" class="interlanguage-link-target"><span>Sunda</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Algoritm" title="Algoritm — sueco" lang="sv" hreflang="sv" data-title="Algoritm" data-language-autonym="Svenska" data-language-local-name="sueco" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-sw mw-list-item"><a href="https://sw.wikipedia.org/wiki/Algorithm" title="Algorithm — suaíli" lang="sw" hreflang="sw" data-title="Algorithm" data-language-autonym="Kiswahili" data-language-local-name="suaíli" class="interlanguage-link-target"><span>Kiswahili</span></a></li><li class="interlanguage-link interwiki-ta mw-list-item"><a href="https://ta.wikipedia.org/wiki/%E0%AE%AA%E0%AE%9F%E0%AE%BF%E0%AE%AE%E0%AF%81%E0%AE%B1%E0%AF%88%E0%AE%A4%E0%AF%8D_%E0%AE%A4%E0%AF%80%E0%AE%B0%E0%AF%8D%E0%AE%B5%E0%AF%81" title="படிமுறைத் தீர்வு — tâmil" lang="ta" hreflang="ta" data-title="படிமுறைத் தீர்வு" data-language-autonym="தமிழ்" data-language-local-name="tâmil" class="interlanguage-link-target"><span>தமிழ்</span></a></li><li class="interlanguage-link interwiki-te mw-list-item"><a href="https://te.wikipedia.org/wiki/%E0%B0%85%E0%B0%B2%E0%B1%8D%E0%B0%97%E0%B0%BE%E0%B0%B0%E0%B0%BF%E0%B0%A5%E0%B0%82" title="అల్గారిథం — telugu" lang="te" hreflang="te" data-title="అల్గారిథం" data-language-autonym="తెలుగు" data-language-local-name="telugu" class="interlanguage-link-target"><span>తెలుగు</span></a></li><li class="interlanguage-link interwiki-tg mw-list-item"><a href="https://tg.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм — tajique" lang="tg" hreflang="tg" data-title="Алгоритм" data-language-autonym="Тоҷикӣ" data-language-local-name="tajique" class="interlanguage-link-target"><span>Тоҷикӣ</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.wikipedia.org/wiki/%E0%B8%82%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5" title="ขั้นตอนวิธี — tailandês" lang="th" hreflang="th" data-title="ขั้นตอนวิธี" data-language-autonym="ไทย" data-language-local-name="tailandês" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-tl mw-list-item"><a href="https://tl.wikipedia.org/wiki/Algoritmo" title="Algoritmo — tagalo" lang="tl" hreflang="tl" data-title="Algoritmo" data-language-autonym="Tagalog" data-language-local-name="tagalo" class="interlanguage-link-target"><span>Tagalog</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Algoritma" title="Algoritma — turco" lang="tr" hreflang="tr" data-title="Algoritma" data-language-autonym="Türkçe" data-language-local-name="turco" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-tt badge-Q17437796 badge-featuredarticle mw-list-item" title="artigo destacado"><a href="https://tt.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм — tatar" lang="tt" hreflang="tt" data-title="Алгоритм" data-language-autonym="Татарча / tatarça" data-language-local-name="tatar" class="interlanguage-link-target"><span>Татарча / tatarça</span></a></li><li class="interlanguage-link interwiki-tw mw-list-item"><a href="https://tw.wikipedia.org/wiki/Algorithm" title="Algorithm — twi" lang="tw" hreflang="tw" data-title="Algorithm" data-language-autonym="Twi" data-language-local-name="twi" class="interlanguage-link-target"><span>Twi</span></a></li><li class="interlanguage-link interwiki-uk badge-Q17437798 badge-goodarticle mw-list-item" title="artigo bom"><a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм — ucraniano" lang="uk" hreflang="uk" data-title="Алгоритм" data-language-autonym="Українська" data-language-local-name="ucraniano" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-ur mw-list-item"><a href="https://ur.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%DB%8C%DB%81" title="خوارزمیہ — urdu" lang="ur" hreflang="ur" data-title="خوارزمیہ" data-language-autonym="اردو" data-language-local-name="urdu" class="interlanguage-link-target"><span>اردو</span></a></li><li class="interlanguage-link interwiki-uz mw-list-item"><a href="https://uz.wikipedia.org/wiki/Algoritm" title="Algoritm — usbeque" lang="uz" hreflang="uz" data-title="Algoritm" data-language-autonym="Oʻzbekcha / ўзбекча" data-language-local-name="usbeque" class="interlanguage-link-target"><span>Oʻzbekcha / ўзбекча</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Thu%E1%BA%ADt_to%C3%A1n" title="Thuật toán — vietnamita" lang="vi" hreflang="vi" data-title="Thuật toán" data-language-autonym="Tiếng Việt" data-language-local-name="vietnamita" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-wa mw-list-item"><a href="https://wa.wikipedia.org/wiki/Algorisse" title="Algorisse — valão" lang="wa" hreflang="wa" data-title="Algorisse" data-language-autonym="Walon" data-language-local-name="valão" class="interlanguage-link-target"><span>Walon</span></a></li><li class="interlanguage-link interwiki-war mw-list-item"><a href="https://war.wikipedia.org/wiki/Algoritmo" title="Algoritmo — waray" lang="war" hreflang="war" data-title="Algoritmo" data-language-autonym="Winaray" data-language-local-name="waray" class="interlanguage-link-target"><span>Winaray</span></a></li><li class="interlanguage-link interwiki-wuu mw-list-item"><a href="https://wuu.wikipedia.org/wiki/%E7%AE%97%E6%B3%95" title="算法 — wu" lang="wuu" hreflang="wuu" data-title="算法" data-language-autonym="吴语" data-language-local-name="wu" class="interlanguage-link-target"><span>吴语</span></a></li><li class="interlanguage-link interwiki-yi mw-list-item"><a href="https://yi.wikipedia.org/wiki/%D7%90%D7%9C%D7%92%D7%90%D7%A8%D7%99%D7%98%D7%9D" title="אלגאריטם — iídiche" lang="yi" hreflang="yi" data-title="אלגאריטם" data-language-autonym="ייִדיש" data-language-local-name="iídiche" class="interlanguage-link-target"><span>ייִדיש</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95" title="算法 — chinês" lang="zh" hreflang="zh" data-title="算法" data-language-autonym="中文" data-language-local-name="chinês" class="interlanguage-link-target"><span>中文</span></a></li><li class="interlanguage-link interwiki-zh-min-nan mw-list-item"><a href="https://zh-min-nan.wikipedia.org/wiki/I%C3%A1n-s%C7%B9g-hoat" title="Ián-sǹg-hoat — min nan" lang="nan" hreflang="nan" data-title="Ián-sǹg-hoat" data-language-autonym="閩南語 / Bân-lâm-gú" data-language-local-name="min nan" class="interlanguage-link-target"><span>閩南語 / Bân-lâm-gú</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E6%BC%94%E7%AE%97%E6%B3%95" title="演算法 — cantonês" lang="yue" hreflang="yue" data-title="演算法" data-language-autonym="粵語" data-language-local-name="cantonês" class="interlanguage-link-target"><span>粵語</span></a></li><li class="interlanguage-link interwiki-zu mw-list-item"><a href="https://zu.wikipedia.org/wiki/Isihlelakwenza" title="Isihlelakwenza — zulu" lang="zu" hreflang="zu" data-title="Isihlelakwenza" data-language-autonym="IsiZulu" data-language-local-name="zulu" class="interlanguage-link-target"><span>IsiZulu</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q8366#sitelinks-wikipedia" title="Editar hiperligações interlínguas" class="wbc-editpage">Editar hiperligações</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Espaços nominais">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Algoritmo" title="Ver a página de conteúdo [c]" accesskey="c"><span>Artigo</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Discuss%C3%A3o:Algoritmo" rel="discussion" title="Discussão sobre o conteúdo da página [t]" accesskey="t"><span>Discussão</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Mudar a variante da língua"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">português</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Vistas">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Algoritmo"><span>Ler</span></a></li><li id="ca-ve-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Algoritmo&amp;veaction=edit" title="Editar esta página [v]" accesskey="v"><span>Editar</span></a></li><li id="ca-edit" class="collapsible vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Algoritmo&amp;action=edit" title="Editar o código-fonte desta página [e]" accesskey="e"><span>Editar código-fonte</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Algoritmo&amp;action=history" title="Edições anteriores desta página. [h]" accesskey="h"><span>Ver histórico</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Ferramentas de página">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Ferramentas"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Ferramentas</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Ferramentas</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">mover para a barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">ocultar</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="Mais opções" >
+	<div class="vector-menu-heading">
+		Operações
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Algoritmo"><span>Ler</span></a></li><li id="ca-more-ve-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Algoritmo&amp;veaction=edit" title="Editar esta página [v]" accesskey="v"><span>Editar</span></a></li><li id="ca-more-edit" class="collapsible vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Algoritmo&amp;action=edit" title="Editar o código-fonte desta página [e]" accesskey="e"><span>Editar código-fonte</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Algoritmo&amp;action=history"><span>Ver histórico</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		Geral
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1ginas_afluentes/Algoritmo" title="Lista de todas as páginas que contêm hiperligações para esta [j]" accesskey="j"><span>Páginas afluentes</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Especial:Altera%C3%A7%C3%B5es_relacionadas/Algoritmo" rel="nofollow" title="Mudanças recentes nas páginas para as quais esta contém hiperligações [k]" accesskey="k"><span>Alterações relacionadas</span></a></li><li id="t-upload" class="mw-list-item"><a href="//pt.wikipedia.org/wiki/Wikipedia:Carregar_ficheiro" title="Carregar ficheiros [u]" accesskey="u"><span>Carregar ficheiro</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Algoritmo&amp;oldid=69710680" title="Hiperligação permanente para esta revisão desta página"><span>Hiperligação permanente</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Algoritmo&amp;action=info" title="Mais informações sobre esta página"><span>Informações da página</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Especial:Citar&amp;page=Algoritmo&amp;id=69710680&amp;wpFormIdentifier=titleform" title="Informação sobre como citar esta página"><span>Citar esta página</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Especial:UrlShortener&amp;url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FAlgoritmo"><span>Obter URL encurtado</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Especial:QrCode&amp;url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FAlgoritmo"><span>Descarregar código QR</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Imprimir/exportar
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-create_a_book" class="mw-list-item"><a href="/w/index.php?title=Especial:Livro&amp;bookcmd=book_creator&amp;referer=Algoritmo"><span>Criar um livro</span></a></li><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Especial:DownloadAsPdf&amp;page=Algoritmo&amp;action=show-download-screen"><span>Descarregar como PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Algoritmo&amp;printable=yes" title="Versão para impressão desta página [p]" accesskey="p"><span>Versão para impressão</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		Noutros projetos
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Algorithms" hreflang="en"><span>Wikimedia Commons</span></a></li><li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q8366" title="Hiperligação para o elemento do repositório de dados [g]" accesskey="g"><span>Elemento Wikidata</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Ferramentas de página">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Aspeto">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Aspeto</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">mover para a barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">ocultar</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">Origem: Wikipédia, a enciclopédia livre.</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="pt" dir="ltr"><figure class="mw-halign-right" typeof="mw:File/Thumb"><a href="/wiki/Ficheiro:Sorting_quicksort_anim.gif" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sorting_quicksort_anim.gif/250px-Sorting_quicksort_anim.gif" decoding="async" width="250" height="191" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif 1.5x" data-file-width="280" data-file-height="214" /></a><figcaption>Uma animação do algoritmo de ordenação quicksort de uma matriz de valores ao acaso. As barras vermelhas marcam o elemento pivô. No início da animação, estando o elemento para o lado direito, é escolhido como o pivô</figcaption></figure>
+<p>Em <a href="/wiki/Matem%C3%A1tica" title="Matemática">matemática</a> e <a href="/wiki/Ci%C3%AAncia_da_computa%C3%A7%C3%A3o" title="Ciência da computação">ciência da computação</a>, um <b>algoritmo</b> é uma sequência finita de <a href="/wiki/Instru%C3%A7%C3%A3o_(inform%C3%A1tica)" title="Instrução (informática)">ações executáveis</a> que visam obter uma solução para um determinado tipo de problema.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> Segundo Dasgupta, Papadimitriou e Vazirani; "Algoritmos são procedimentos precisos, não ambíguos, padronizados, eficientes e corretos.".<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>As suas características são: finitas, o algoritmo deve eventualmente resolver o problema; bem definidas: os passos devem ser definidos de modo a serem entendidos; efetivas, deve sempre resolver o que tem para solucionar, antecipando falhas.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>&#160;
+</p><p>O conceito de <i>algoritmo</i> existe há séculos e o uso do conceito pode ser atribuído a matemáticos russos, por exemplo a Peneira de <a href="/wiki/Erat%C3%B3stenes" title="Eratóstenes">Eratóstenes</a> e o algoritmo de <a href="/wiki/Euclides" title="Euclides">Euclides</a>.
+</p><p>O conceito de algoritmo é frequentemente ilustrado pelo exemplo de uma receita culinária, embora muitos algoritmos sejam mais complexos. Eles podem repetir passos (fazer <a href="/wiki/Itera%C3%A7%C3%A3o" title="Iteração">iterações</a>) ou necessitar de decisões (tais como comparações ou <a href="/wiki/L%C3%B3gica" title="Lógica">lógica</a>) até que a tarefa seja completada. Um algoritmo corretamente executado não irá resolver um problema se estiver implementado incorretamente ou se não for apropriado ao problema.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>Um algoritmo não representa, necessariamente, um <a href="/wiki/Programa_de_computador" title="Programa de computador">programa de computador</a>,<sup id="cite_ref-DEMOTUSAI_6-0" class="reference"><a href="#cite_note-DEMOTUSAI-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup> e sim os passos necessários para realizar uma tarefa. Sua implementação pode ser feita por um <a href="/wiki/Computador" title="Computador">computador</a>, por outro tipo de <a href="/wiki/Aut%C3%B4mato" title="Autômato">autômato</a> ou mesmo por um ser humano. Diferentes algoritmos podem realizar a mesma tarefa usando um conjunto diferenciado de instruções em mais ou menos tempo, espaço ou esforço do que outros. Tal diferença pode ser reflexo da <a href="/wiki/Complexidade_computacional" title="Complexidade computacional">complexidade computacional</a> aplicada, que depende de <a href="/wiki/Estruturas_de_dados" class="mw-redirect" title="Estruturas de dados">estruturas de dados</a> adequadas ao algoritmo. Por exemplo, um algoritmo para se vestir pode especificar que você vista primeiro as meias e os sapatos antes de vestir a calça enquanto outro algoritmo especifica que você deve primeiro vestir a calça e depois as meias e os sapatos. Fica claro que o primeiro algoritmo é mais difícil de executar que o segundo apesar de ambos levarem ao mesmo resultado.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>O conceito de um algoritmo foi formalizado em <a href="/wiki/1936" title="1936">1936</a> pela <a href="/wiki/M%C3%A1quina_de_Turing" title="Máquina de Turing">Máquina de Turing</a> de <a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a> e pelo <a href="/wiki/C%C3%A1lculo_lambda" title="Cálculo lambda">cálculo lambda</a> de <a href="/wiki/Alonzo_Church" title="Alonzo Church">Alonzo Church</a>, que formaram as primeiras fundações da <a href="/wiki/Ci%C3%AAncia_da_computa%C3%A7%C3%A3o" title="Ciência da computação">Ciência da computação</a>.
+</p>
+<meta property="mw:PageProp/toc" />
+<div class="mw-heading mw-heading2"><h2 id="Etimologia">Etimologia</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=1" title="Editar secção: Etimologia" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=1" title="Editar código-fonte da secção: Etimologia"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Os historiadores da palavra <i>algoritmo</i> encontraram a <a href="/wiki/Etimologia" title="Etimologia">origem</a> no sobrenome, <a href="/wiki/Al-Khwarizmi" class="mw-redirect" title="Al-Khwarizmi">Al-Khwarizmi</a>, do matemático <a href="/wiki/P%C3%A9rsia" title="Pérsia">persa</a> do <a href="/wiki/S%C3%A9culo_IX" title="Século IX">século IX</a> Mohamed ben Musa,<sup id="cite_ref-DECOMUFOP_8-0" class="reference"><a href="#cite_note-DECOMUFOP-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup> cujas obras foram traduzidas no ocidente cristão no <a href="/wiki/S%C3%A9culo_XII" title="Século XII">século XII</a>,<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup> tendo uma delas recebido o nome <i>Algorithmi de numero indorum</i>, sobre os algoritmos usando o sistema de <a href="/wiki/Sistema_decimal" class="mw-redirect" title="Sistema decimal">numeração decimal</a> (indiano). Outros autores, entretanto, defendem a origem da palavra em <i>Al-goreten</i> (raiz - conceito que se pode aplicar aos cálculos).<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup> "<a href="/wiki/%C3%81lgebra" title="Álgebra">Álgebra</a>" e "algorismo" também formam formas corrompidas da palavra, pois as pessoas esqueciam as derivações originais. O dicionário "Vollständiges Mathematisches Lexicon" (Leipzig, 1747) refere a palavra "Algorithmus"; nesta designação estão combinadas as noções de quatro cálculos aritméticos, nomeadamente a <a href="/wiki/Adi%C3%A7%C3%A3o" title="Adição">adição</a>, <a href="/wiki/Multiplica%C3%A7%C3%A3o" title="Multiplicação">multiplicação</a>, <a href="/wiki/Subtra%C3%A7%C3%A3o" title="Subtração">subtração</a> e <a href="/wiki/Divis%C3%A3o" title="Divisão">divisão</a>. A frase "algorithmus infinitesimalis" foi na altura utilizada para significar; "maneiras de calcular com quantidades infinitésimas" (pequenas), uma invenção de <a href="/wiki/Leibnitz" class="mw-redirect" title="Leibnitz">Leibnitz</a>. Também é conhecido no meio financeiro, como "algos".<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">&#91;</span>11<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Formalismo">Formalismo</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=2" title="Editar secção: Formalismo" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=2" title="Editar código-fonte da secção: Formalismo"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure typeof="mw:File/Thumb"><a href="/wiki/Ficheiro:Fluxogranma02.gif" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/a/aa/Fluxogranma02.gif" decoding="async" width="365" height="413" class="mw-file-element" data-file-width="365" data-file-height="413" /></a><figcaption><a href="/wiki/Fluxograma" title="Fluxograma">Fluxograma</a>, um exemplo de algoritmo imperativo. O estado em vermelho indica a entrada do algoritmo enquanto os estados em verde indicam as possíveis saídas.</figcaption></figure>
+<p>Um <a href="/wiki/Programa_de_computador" title="Programa de computador">programa de computador</a> é essencialmente um algoritmo que diz ao <a href="/wiki/Computador" title="Computador">computador</a> os passos específicos e em que ordem eles devem ser executados, como por exemplo, os passos a serem tomados para calcular as notas que serão impressas nos boletins dos alunos de uma escola. Logo, o algoritmo pode ser considerado uma sequência de operações que podem ser simuladas por uma <a href="/wiki/M%C3%A1quina_de_Turing" title="Máquina de Turing">máquina de Turing</a> completa.
+</p><p>Quando os procedimentos de um algoritmo envolvem o <a href="/wiki/Processamento_de_dados" class="mw-redirect" title="Processamento de dados">processamento de dados</a>, a informação é lida de uma fonte de entrada, processada e retornada sob novo valor após processamento, o que geralmente é realizado com o auxílio de uma ou mais <a href="/wiki/Estrutura_de_dados" title="Estrutura de dados">estrutura de dados</a>.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">&#91;</span>12<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>Para qualquer processo computacional, o algoritmo precisa estar rigorosamente definido, especificando a maneira que ele se comportará em todas as circunstâncias. A corretividade do algoritmo pode ser provada matematicamente, bem como a quantidade assintótica de tempo e espaço (complexidade) necessários para a sua execução. Estes aspectos dos algoritmos são alvo da <a href="/wiki/An%C3%A1lise_de_algoritmos" title="Análise de algoritmos">análise de algoritmos</a>.
+</p><p>A maneira mais simples de se pensar um algoritmo é por uma <a href="/wiki/Lista" title="Lista">lista</a> de procedimentos bem definida, na qual as instruções são executadas passo a passo a partir do começo da lista, uma ideia que pode ser facilmente visualizada através de um <a href="/wiki/Fluxograma" title="Fluxograma">fluxograma</a>. Tal formalização adota as premissas da <a href="/wiki/Programa%C3%A7%C3%A3o_imperativa" title="Programação imperativa">programação imperativa</a>, que é uma forma mecânica para visualizar e desenvolver um algoritmo. Concepções alternativas para algoritmos variam em <a href="/wiki/Programa%C3%A7%C3%A3o_funcional" title="Programação funcional">programação funcional</a> e <a href="/wiki/Programa%C3%A7%C3%A3o_l%C3%B3gica" title="Programação lógica">programação lógica</a>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Término_do_algoritmo"><span id="T.C3.A9rmino_do_algoritmo"></span>Término do algoritmo</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=3" title="Editar secção: Término do algoritmo" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=3" title="Editar código-fonte da secção: Término do algoritmo"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Alguns autores restringem a definição de algoritmo para procedimentos que eventualmente terminam. <a href="/wiki/Marvin_Minsky" title="Marvin Minsky">Marvin Minsky</a> constatou que se o tamanho de um procedimento não é conhecido de antemão, tentar descobri-lo é um problema indecidível, já que o procedimento pode ser executado infinitamente, de forma que nunca se terá a resposta. Alan Turing provou em <a href="/wiki/1936" title="1936">1936</a> que não existe máquina de Turing para realizar tal análise para todos os casos, logo não há algoritmo para realizar tal tarefa para todos os casos. Tal condição é conhecida atualmente como <a href="/wiki/Problema_da_parada" title="Problema da parada">problema da parada</a>.
+</p><p>Para algoritmos intermináveis o sucesso não pode ser determinado pela interpretação da resposta e sim por condições impostas pelo próprio desenvolvedor do algoritmo durante sua execução.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Exemplos">Exemplos</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=4" title="Editar secção: Exemplos" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=4" title="Editar código-fonte da secção: Exemplos"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/Ficheiro:Torre_de_Han%C3%B3i.jpg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/Torre_de_Han%C3%B3i.jpg/250px-Torre_de_Han%C3%B3i.jpg" decoding="async" width="220" height="210" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/Torre_de_Han%C3%B3i.jpg/330px-Torre_de_Han%C3%B3i.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/28/Torre_de_Han%C3%B3i.jpg/440px-Torre_de_Han%C3%B3i.jpg 2x" data-file-width="445" data-file-height="424" /></a><figcaption>Imagem da torre de Hanói (com três discos), mostrando como estariam as peças no início e no fim da solução</figcaption></figure>
+<p>Alguns exemplos genéricos de algoritmos são: uma coreografia, um manual de instruções, uma receita culinária, Técnicas para resolver problemas matemáticos, uma pesquisa na internet, dentre outros.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Torre_de_Hanói"><span id="Torre_de_Han.C3.B3i"></span>Torre de Hanói</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=5" title="Editar secção: Torre de Hanói" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=5" title="Editar código-fonte da secção: Torre de Hanói"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Um clássico problema que trabalha o desenvolvimento da lógica e do raciocínio matemático é a <a href="/wiki/Torre_de_Han%C3%B3i" title="Torre de Hanói">torre de Hanói</a>, inventado pelo matemático francês <a href="/wiki/%C3%89douard_Lucas" title="Édouard Lucas">Édouard Lucas</a> em 1883.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">&#91;</span>13<span class="cite-bracket">&#93;</span></a></sup> O quebra-cabeça é composto por três hastes e vários discos de tamanhos diferentes, que podem deslizar para qualquer haste. O quebra-cabeça começa com os discos em uma pilha organizada em ordem crescente de tamanho em uma haste, a menor no topo, fazendo assim uma forma cônica.
+</p><p>Neste exemplo, toma-se o seguinte problema: tem-se três hastes. Umas das hastes serve de suporte para três discos. Deseja-se mover todos os discos para outra haste, porém deve-se movimentar um disco de cada vez e um disco maior nunca pode ser colocado sobre um disco de menor tamanho.
+</p>
+<div class="mw-heading mw-heading4"><h4 id="Solução_em_forma_narrativa"><span id="Solu.C3.A7.C3.A3o_em_forma_narrativa"></span>Solução em forma narrativa</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=6" title="Editar secção: Solução em forma narrativa" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=6" title="Editar código-fonte da secção: Solução em forma narrativa"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure typeof="mw:File/Thumb"><a href="/wiki/Ficheiro:Tower_of_Hanoi.gif" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tower_of_Hanoi.gif/278px-Tower_of_Hanoi.gif" decoding="async" width="278" height="85" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/4/4f/Tower_of_Hanoi.gif 1.5x" data-file-width="320" data-file-height="98" /></a><figcaption>Resolução da <a href="/wiki/Torre_de_Han%C3%B3i" title="Torre de Hanói">torre de Hanói</a> (com três discos)</figcaption></figure>
+<p>Nomeiam-se as hastes como A, B e C e os discos como Vermelho, Verde e Azul. Considera-se que inicialmente os discos estão na haste A. Segue uma sequência de passos para a resolução do quebra-cabeça:
+</p>
+<ol><li>move-se o disco Vermelho para a haste C;</li>
+<li>move-se o disco Verde para a haste B;</li>
+<li>move-se o disco Vermelho para a haste B;</li>
+<li>move-se o disco Azul para a haste C;</li>
+<li>move-se o disco Vermelho para a haste A;</li>
+<li>move-se o disco Verde para a haste C;</li>
+<li>move-se o disco Vermelho para a haste C.</li></ol>
+<div class="mw-heading mw-heading4"><h4 id="Solução_em_forma_gráfica"><span id="Solu.C3.A7.C3.A3o_em_forma_gr.C3.A1fica"></span>Solução em forma gráfica</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=7" title="Editar secção: Solução em forma gráfica" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=7" title="Editar código-fonte da secção: Solução em forma gráfica"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Podemos também representar a solução em forma gráfica, desenhando as hastes e a posição dos discos a cada movimento (ou passo). Com 3 discos, o quebra-cabeça pode ser resolvido em 7 movimentos. O número mínimo de movimentos necessários para resolver um quebra-cabeça da Torre de Hanói é <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{n}-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{n}-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51e4bd4ef2f9549d026cbf643a91c0d12a8c6794" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.505ex; width:6.384ex; height:2.509ex;" alt="{\displaystyle 2^{n}-1}" /></span>, onde n é o número de discos.
+</p><p>Essa sequência, ou descrição, finita de passos ou tarefas é a quem chamamos de algoritmos.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Análise_de_algoritmos"><span id="An.C3.A1lise_de_algoritmos"></span>Análise de algoritmos</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=8" title="Editar secção: Análise de algoritmos" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=8" title="Editar código-fonte da secção: Análise de algoritmos"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r69811361">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Magnifying_glass_01.svg/17px-Magnifying_glass_01.svg.png" decoding="async" width="17" height="17" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Magnifying_glass_01.svg/26px-Magnifying_glass_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Magnifying_glass_01.svg/34px-Magnifying_glass_01.svg.png 2x" data-file-width="663" data-file-height="659" /></span></span> Ver artigo principal: <a href="/wiki/An%C3%A1lise_de_algoritmos" title="Análise de algoritmos">Análise de algoritmos</a></div>
+<p>A análise de algoritmos é um ramo da <a href="/wiki/Ci%C3%AAncia_da_computa%C3%A7%C3%A3o" title="Ciência da computação">ciência da computação</a> que estuda as <a href="/wiki/T%C3%A9cnicas_de_Projeto_de_Algoritmos" class="mw-redirect" title="Técnicas de Projeto de Algoritmos">técnicas de projeto de algoritmos</a> e os algoritmos de forma abstrata, sem estarem implementados em uma <a href="/wiki/Linguagem_de_programa%C3%A7%C3%A3o" title="Linguagem de programação">linguagem de programação</a> em particular ou implementadas de algum outro modo. Ela preocupa-se com os recursos necessários para a execução do algoritmo tais como o tempo de execução e o espaço de armazenamento de dados. Deve-se perceber que para um dado algoritmo pode-se ter diferentes quantidades de recursos alocados de acordo com os parâmetros passados na entrada. Por exemplo, se definirmos que o fatorial de um número natural é igual ao fatorial de seu antecessor multiplicado pelo próprio número, fica claro que a execução de <code>fatorial(10)</code> consome mais tempo que a execução de <code>fatorial(5)</code>.
+</p><p>Um meio de exibir um algoritmo a fim de analisá-lo é através da implementação por <a href="/wiki/Pseudoc%C3%B3digo" title="Pseudocódigo">pseudocódigo</a> em português estruturado, também conhecido no Brasil como <a href="/wiki/Portugol" title="Portugol">Portugol</a>. Este código pode ser digitado dentro de algum editor de textos como o <a href="/wiki/Bloco_de_Notas" title="Bloco de Notas">Bloco de Notas</a>, anotado num caderno ou ainda poder digitado diretamente dentro de um programa interpretador de algoritmos, como é caso do <a href="/wiki/Visualg" title="Visualg">Visualg</a>, que é um editor, interpretador e executor dos algoritmos.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Classificação"><span id="Classifica.C3.A7.C3.A3o"></span>Classificação</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=9" title="Editar secção: Classificação" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=9" title="Editar código-fonte da secção: Classificação"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Classificação_por_implementação"><span id="Classifica.C3.A7.C3.A3o_por_implementa.C3.A7.C3.A3o"></span>Classificação por implementação</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=10" title="Editar secção: Classificação por implementação" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=10" title="Editar código-fonte da secção: Classificação por implementação"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Pode-se classificar algoritmos pela maneira pelo qual foram implementados:
+</p>
+<ul><li><b>Recursivo</b> ou <b>iterativo</b> - um <a href="/wiki/Recursividade_(ci%C3%AAncia_da_computa%C3%A7%C3%A3o)" title="Recursividade (ciência da computação)">algoritmo recursivo</a> possui a característica de invocar a si mesmo repetidamente até que certa condição seja satisfeita e ele é terminado, que é um método comum em <a href="/wiki/Programa%C3%A7%C3%A3o_funcional" title="Programação funcional">programação funcional</a>. Algoritmos iterativos usam estruturas de repetição tais como laços, ou ainda estruturas de dados adicionais tais como <a href="/wiki/LIFO" title="LIFO">pilhas</a>, para resolver problemas. Cada algoritmo recursivo possui um algoritmo iterativo equivalente e vice-versa, mas que pode ter mais ou menos complexidade em sua construção;</li>
+<li><b>Lógico</b> - um algoritmo pode ser visto como uma dedução lógica controlada. O componente lógico expressa os axiomas usados na computação e o componente de controle determina a maneira como a dedução é aplicada aos axiomas. Tal conceito é base para a <a href="/wiki/Programa%C3%A7%C3%A3o_l%C3%B3gica" title="Programação lógica">programação lógica</a>;</li>
+<li><b>Serial</b> ou <b>paralelo</b> - algoritmos são geralmente assumidos por serem executados instrução a instrução individualmente, como uma lista de execução, o que constitui um algoritmo serial. Tal conceito é base para a <a href="/wiki/Programa%C3%A7%C3%A3o_imperativa" title="Programação imperativa">programação imperativa</a>. Por outro lado existem algoritmos executados paralelamente, que levam em conta as <a href="/wiki/Arquitetura_de_computadores" title="Arquitetura de computadores">arquiteturas de computadores</a> com mais de um <a href="/wiki/Microprocessador" title="Microprocessador">processador</a> para executar mais de uma instrução ao mesmo tempo. Tais algoritmos dividem os problemas em subproblemas e o delegam a quantos processadores estiverem disponíveis, agrupando no final o resultado dos subproblemas em um resultado final ao algoritmo. Tal conceito é base para a <a href="/wiki/Computa%C3%A7%C3%A3o_paralela" title="Computação paralela">programação paralela</a>. De forma geral, algoritmos iterativos são paralelizáveis; por outro lado existem algoritmos que não são paralelizáveis, chamados então problemas inerentemente seriais;</li>
+<li><b>Determinístico</b> ou <b>não-determinístico</b> - algoritmos determinísticos resolvem o problema com uma decisão exata a cada passo enquanto algoritmos não-determinísticos resolvem o problema ao deduzir os melhores passos através de estimativas sob forma de <a href="/wiki/Heur%C3%ADstica" title="Heurística">heurísticas</a>;</li>
+<li><b>Exato</b> ou <b>aproximado</b> - enquanto alguns algoritmos encontram uma resposta exata, algoritmos de aproximação procuram uma resposta próxima a verdadeira solução, seja através de estratégia determinística ou aleatória. Possuem aplicações práticas sobretudo para problemas muito complexos, do qual uma resposta correta é inviável devido à sua <a href="/wiki/Complexidade_computacional" title="Complexidade computacional">complexidade computacional</a>.</li></ul>
+<div class="mw-heading mw-heading3"><h3 id="Classificação_por_paradigma"><span id="Classifica.C3.A7.C3.A3o_por_paradigma"></span>Classificação por paradigma</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=11" title="Editar secção: Classificação por paradigma" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=11" title="Editar código-fonte da secção: Classificação por paradigma"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Pode-se classificar algoritmos pela metodologia ou paradigma de seu desenvolvimento, tais como:
+</p>
+<ul><li><b><a href="/wiki/Divis%C3%A3o_e_conquista" title="Divisão e conquista">Divisão e conquista</a></b> - algoritmos de divisão e conquista reduzem repetidamente o problema em sub-problemas, geralmente de forma recursiva, até que o sub-problema é pequeno o suficiente para ser resolvido. Um exemplo prático é o algoritmo de ordenação <i><a href="/wiki/Merge_sort" title="Merge sort">merge sort</a></i>. Uma variante dessa metodologia é o <i>decremento e conquista</i>, que resolve um sub-problema e utiliza a solução para resolver um problema maior. Um exemplo prático é o algoritmo para <a href="/wiki/Pesquisa_bin%C3%A1ria" title="Pesquisa binária">pesquisa binária</a>;</li>
+<li><b><a href="/wiki/Programa%C3%A7%C3%A3o_din%C3%A2mica" title="Programação dinâmica">Programação dinâmica</a></b> - pode-se utilizar a programação dinâmica para evitar o re-cálculo de soluções já resolvidas anteriormente;</li>
+<li><b><a href="/wiki/Algoritmo_ganancioso" class="mw-redirect" title="Algoritmo ganancioso">Algoritmo ganancioso</a></b> - um algoritmo ganancioso é similar à programação dinâmica, mas difere na medida em que as soluções dos sub-problemas não precisam ser conhecidas a cada passo, uma escolha gananciosa pode ser feita a cada momento com o que até então parece ser mais adequado;</li>
+<li><b><a href="/wiki/Programa%C3%A7%C3%A3o_linear" title="Programação linear">Programação linear</a> - </b>A resolução de um problema através de programação linear envolve a maximização / minimização das entradas de um conjunto de desigualdades lineares;</li>
+<li><b>Redução</b> - a redução resolve o problema ao transformá-lo em outro problema. É chamado também <i>transformação e conquista;</i></li>
+<li><b>Busca e enumeração</b> - vários problemas podem ser modelados através de <a href="/wiki/Grafo" class="mw-redirect" title="Grafo">grafos</a>. Um algoritmo de exploração de grafo pode ser usado para caminhar pela estrutura e retornam informações úteis para a resolução do problema. Esta categoria inclui <a href="/wiki/Algoritmo_de_busca" title="Algoritmo de busca">algoritmos de busca</a> e <a href="/wiki/Backtracking" title="Backtracking">backtracking</a>;</li>
+<li><b>Paradigma heurístico e probabilístico</b> - algoritmos probabilísticos realizam escolhas aleatoriamente. <a href="/wiki/Algoritmo_gen%C3%A9tico" title="Algoritmo genético">Algoritmos genéticos</a> tentam encontrar a solução através de ciclos de mutações evolucionárias entre gerações de passos, tendendo para a solução exata do problema. Algoritmos heurísticos encontram uma solução aproximada para o problema.</li></ul>
+<div class="mw-heading mw-heading3"><h3 id="Classificação_por_campo_de_estudo"><span id="Classifica.C3.A7.C3.A3o_por_campo_de_estudo"></span>Classificação por campo de estudo</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=12" title="Editar secção: Classificação por campo de estudo" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=12" title="Editar código-fonte da secção: Classificação por campo de estudo"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Cada campo da ciência possui seus próprios problemas e respectivos algoritmos adequados para resolvê-los. Exemplos clássicos são algoritmos de <a href="/wiki/Algoritmo_de_busca" title="Algoritmo de busca">busca</a>, de <a href="/wiki/Algoritmo_de_ordena%C3%A7%C3%A3o" title="Algoritmo de ordenação">ordenação</a>, de <a href="/wiki/An%C3%A1lise_num%C3%A9rica" title="Análise numérica">análise numérica</a>, de <a href="/wiki/Teoria_de_grafos" class="mw-redirect" title="Teoria de grafos">teoria de grafos</a>, de manipulação de <a href="/wiki/String" class="mw-redirect" title="String">cadeias de texto</a>, de <a href="/wiki/Geometria" title="Geometria">geometria</a> computacional, de <a href="/wiki/An%C3%A1lise_combinat%C3%B3ria" class="mw-redirect" title="Análise combinatória">análise combinatória</a>, de <a href="/wiki/Aprendizagem_de_m%C3%A1quina" class="mw-redirect" title="Aprendizagem de máquina">aprendizagem de máquina</a>, de <a href="/wiki/Criptografia" title="Criptografia">criptografia</a>, de <a href="/wiki/Compress%C3%A3o_de_dados" title="Compressão de dados">compressão de dados</a> e de <a href="/wiki/Parser" class="mw-redirect" title="Parser">interpretação de texto</a>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Classificação_por_complexidade"><span id="Classifica.C3.A7.C3.A3o_por_complexidade"></span>Classificação por complexidade</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=13" title="Editar secção: Classificação por complexidade" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=13" title="Editar código-fonte da secção: Classificação por complexidade"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r69811361" /><div role="note" class="hatnote navigation-not-searchable"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Magnifying_glass_01.svg/17px-Magnifying_glass_01.svg.png" decoding="async" width="17" height="17" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Magnifying_glass_01.svg/26px-Magnifying_glass_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Magnifying_glass_01.svg/34px-Magnifying_glass_01.svg.png 2x" data-file-width="663" data-file-height="659" /></span></span> Ver artigo principal: <a href="/wiki/Complexidade_computacional" title="Complexidade computacional">Complexidade computacional</a></div>
+<p>Alguns algoritmos são executados em tempo linear, de acordo com a entrada, enquanto outros são executados em tempo exponencial ou até mesmo nunca terminam de serem executados. Alguns ditos problemas tem múltiplos algoritmos enquanto outros não possuem algoritmos para resolução.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span class="cite-bracket">&#91;</span>14<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Implementação"><span id="Implementa.C3.A7.C3.A3o"></span>Implementação</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=14" title="Editar secção: Implementação" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=14" title="Editar código-fonte da secção: Implementação"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Algoritmos podem ser implementados em circuitos elétricos ou até mesmo em dispositivos mecânicos (autômatos). Mania dos inventores do século XIX, os autômatos eram máquinas totalmente mecânicas, construídas com a capacidade de serem programadas para realizar um conjunto de atividades autônomas. Em 2011, o filme <i>A Invenção de Hugo Cabret</i> (tradução brasileira) do cineasta <a href="/wiki/Martin_Scorsese" title="Martin Scorsese">Martin Scorsese</a> traz a história do ilusionista Georges Méliès precursor do cinema e um colecionador de autômatos, sendo uma de suas máquinas o fio condutor desta história. O autômato específico era capaz de desenhar a cena emblemática do seu filme "Viagem à Lua".
+</p><p>Entretanto, a maioria dos algoritmos são desenvolvidos para programas de computador, para isto, existe uma grande variedade de linguagens de programação, cada uma com características específicas que podem facilitar a implementação de determinados algoritmos ou atender a propósitos mais gerais.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Ver_também"><span id="Ver_tamb.C3.A9m"></span>Ver também</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=15" title="Editar secção: Ver também" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=15" title="Editar código-fonte da secção: Ver também"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2;">
+<ul><li><a href="/wiki/Estrutura_de_dados" title="Estrutura de dados">Estrutura de dados</a></li>
+<li><a href="/wiki/Aut%C3%B4mato" title="Autômato">Autômato</a></li>
+<li><a href="/wiki/Complexidade_computacional" title="Complexidade computacional">Complexidade computacional</a></li>
+<li><a href="/wiki/Teoria_da_computabilidade" title="Teoria da computabilidade">Teoria da computabilidade</a></li>
+<li><a href="/wiki/Teoria_da_computa%C3%A7%C3%A3o" title="Teoria da computação">Teoria da computação</a></li>
+<li><a href="/wiki/Garbage_in,_garbage_out" title="Garbage in, garbage out">Garbage in, garbage out</a></li>
+<li><a href="/wiki/M%C3%A1quina_abstrata" title="Máquina abstrata">Máquina abstrata</a></li>
+<li><a href="/wiki/Negocia%C3%A7%C3%B5es_de_alta_frequ%C3%AAncia" title="Negociações de alta frequência">Negociações de alta frequência</a></li>
+<li><a href="/wiki/Algoritmo_probabil%C3%ADstico" title="Algoritmo probabilístico">Algoritmo probabilístico</a></li>
+<li><a href="/wiki/Algoritmo_de_Euclides" title="Algoritmo de Euclides">Algoritmo de Euclides</a></li></ul>
+</div>
+<h2 id="Referências" style="cursor: help;" title="Esta seção foi configurada para não ser editável diretamente. Edite a página toda ou a seção anterior em vez disso."><span id="Refer.C3.AAncias"></span>Referências</h2>
+<div class="reflist" style="list-style-type: decimal;"><div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text">Ziviani, 2011, p. 1</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a href="/wiki/Encyclop%C3%A6dia_Britannica" title="Encyclopædia Britannica">The Editors Of Encyclopædia Britannica</a>. <a rel="nofollow" class="external text" href="https://www.britannica.com/science/algorithm">Algorithm</a>. Acesso em: 02 dez. 2018</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text">Dasgupta, Papadimitriou e Vazirani, 2010, p. 2</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><cite class="citation book">Mueller e Massaron, John e Luca (2017). <a rel="nofollow" class="external text" href="http://worldcat.org/oclc/1028615961"><i>Algorithms For Dummies</i></a>. [S.l.]: J. Wiley &amp; Sons. <a href="/wiki/OCLC" class="mw-redirect" title="OCLC">OCLC</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/oclc/1028615961">1028615961</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fpt.wikipedia.org%3AAlgoritmo&amp;rft.aufirst=John+e+Luca&amp;rft.aulast=Mueller+e+Massaron&amp;rft.btitle=Algorithms+For+Dummies&amp;rft.date=2017&amp;rft.genre=book&amp;rft.pub=J.+Wiley+%26+Sons&amp;rft_id=http%3A%2F%2Fworldcat.org%2Foclc%2F1028615961&amp;rft_id=info%3Aoclcnum%2F1028615961&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text">Jean Luc Chabert, <i>A History of Algorithms</i>: <i>From the Pebble to the Microchip</i>. Springer Verlag, 1999. <a href="/wiki/Especial:Fontes_de_livros/9783540633693" class="internal mw-magiclink-isbn">ISBN 978-3-540-63369-3</a>. (em inglês)</span>
+</li>
+<li id="cite_note-DEMOTUSAI-6"><span class="mw-cite-backlink"><a href="#cite_ref-DEMOTUSAI_6-0">↑</a></span> <span class="reference-text"><cite class="citation thesis">Nuno Miguel da Conceição Fernandes Verdasca (janeiro de 2013). <a rel="nofollow" class="external text" href="https://repositorio.ipl.pt/bitstream/10400.21/2540/1/Disserta%C3%A7%C3%A3o.pdf"><i>Identificação e Análise de Movimento Humano com Ultrassons</i></a> <span style="font-size:85%;">(PDF)</span> (Dissertação de mestrado)<span class="reference-accessdate">. Consultado em 12 de Março de 2015</span></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fpt.wikipedia.org%3AAlgoritmo&amp;rft.au=Nuno+Miguel+da+Concei%C3%A7%C3%A3o+Fernandes+Verdasca&amp;rft.date=2013-01&amp;rft.degree=mestrado&amp;rft.title=Identifica%C3%A7%C3%A3o+e+An%C3%A1lise+de+Movimento+Humano+com+Ultrassons&amp;rft_id=http%3A%2F%2Frepositorio.ipl.pt%2Fbitstream%2F10400.21%2F2540%2F1%2FDisserta%25C3%25A7%25C3%25A3o.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation" class="Z3988"><span style="display:none;">&#160;</span></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span> <span class="reference-text"><i>Algorithmics: The Spirit of Computing</i>. Addison-Wesley. 2004. <a href="/wiki/Especial:Fontes_de_livros/9780321117847" class="internal mw-magiclink-isbn">ISBN 978-0-321-11784-7</a>. (em inglês)</span>
+</li>
+<li id="cite_note-DECOMUFOP-8"><span class="mw-cite-backlink"><a href="#cite_ref-DECOMUFOP_8-0">↑</a></span> <span class="reference-text"><cite class="citation web">Loureiro, Computação da UFOP. <a rel="nofollow" class="external text" href="http://www.decom.ufop.br/menotti/paa101/slides/aula-AnaliseAlgoritmos.pdf">«Análise de complexidade»</a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Consultado em 12 de janeiro de 2012</span></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fpt.wikipedia.org%3AAlgoritmo&amp;rft.au=Loureiro%2C+Computa%C3%A7%C3%A3o+da+UFOP&amp;rft.btitle=An%C3%A1lise+de+complexidade&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.decom.ufop.br%2Fmenotti%2Fpaa101%2Fslides%2Faula-AnaliseAlgoritmos.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><a href="#cite_ref-9">↑</a></span> <span class="reference-text"><cite class="citation journal"><a rel="nofollow" class="external text" href="https://www.bbc.com/portuguese/geral-54327147">«O sábio que introduziu algarismos arábicos no Ocidente e nos salvou de multiplicar CXXIII por XI»</a>. <i>BBC News Brasil</i><span class="reference-accessdate">. Consultado em 30 de janeiro de 2024</span></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fpt.wikipedia.org%3AAlgoritmo&amp;rft.atitle=O+s%C3%A1bio+que+introduziu+algarismos+ar%C3%A1bicos+no+Ocidente+e+nos+salvou+de+multiplicar+CXXIII+por+XI&amp;rft.genre=article&amp;rft.jtitle=BBC+News+Brasil&amp;rft_id=https%3A%2F%2Fwww.bbc.com%2Fportuguese%2Fgeral-54327147&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><a href="#cite_ref-10">↑</a></span> <span class="reference-text">TAVARES, P. de Campos; <b>Algoritmo</b>, <i>in</i> "Enciclopédia Verbo Luso-Brasileira da Cultura, Edição Século XXI", Volume II, Editorial Verbo, Braga, Janeiro de 1998 <a href="/wiki/Especial:Fontes_de_livros/9722218646" class="internal mw-magiclink-isbn">ISBN 972-22-1864-6</a>.</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><a href="#cite_ref-11">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://expresso.sapo.pt/algoritmos-assaltam-mercados-de-icommoditiesi-depois-das-bolsas=f714175">algoritmos e mercados</a> Acedido em 20 de julho 2012</span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><a href="#cite_ref-12">↑</a></span> <span class="reference-text">Cormen, Thomas. Algoritmos - Teoria e Prática, 3 ed. São Paulo:  GEN LTC, 2010.</span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><a href="#cite_ref-13">↑</a></span> <span class="reference-text"><cite class="citation book">Spitznagel, Edward L. (1971). <a rel="nofollow" class="external text" href="https://www.worldcat.org/oclc/130674"><i>Selected topics in mathematics</i></a>. New York: Holt, Rinehart and Winston. 137&#160;páginas. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Especial:Fontes_de_livros/0030846935" title="Especial:Fontes de livros/0030846935">0030846935</a>. <a href="/wiki/OCLC" class="mw-redirect" title="OCLC">OCLC</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/oclc/130674">130674</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fpt.wikipedia.org%3AAlgoritmo&amp;rft.aufirst=Edward+L.&amp;rft.aulast=Spitznagel&amp;rft.btitle=Selected+topics+in+mathematics&amp;rft.date=1971&amp;rft.genre=book&amp;rft.isbn=0030846935&amp;rft.place=New+York&amp;rft.pub=Holt%2C+Rinehart+and+Winston&amp;rft_id=https%3A%2F%2Fwww.worldcat.org%2Foclc%2F130674&amp;rft_id=info%3Aoclcnum%2F130674&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><a href="#cite_ref-14">↑</a></span> <span class="reference-text">Jesús Bisbal Riera, <i>Manual de Algorítmica</i>: <i>Recursividad, complejidad y diseño de algoritmos</i>, Editorial UOC, 2009 <a href="/wiki/Especial:Fontes_de_livros/8497880277" class="internal mw-magiclink-isbn">ISBN 8-497-88027-7</a> (em castelhano)</span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="Bibliografia">Bibliografia</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=16" title="Editar secção: Bibliografia" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=16" title="Editar código-fonte da secção: Bibliografia"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><style data-mw-deduplicate="TemplateStyles:r57042293">.mw-parser-output .smallcaps{font-variant:small-caps}</style><span class="smallcaps">Dasgupta, Sanjoy</span>; <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r57042293" /><span class="smallcaps">Papadimitriou, Christos</span>; <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r57042293" /><span class="smallcaps">Vazirani, Umesh</span>. <i>Algoritmos</i>. Porto Alegre: AMGH, 2010.</li>
+<li><a rel="nofollow" class="external text" href="http://www.novateceditora.com.br/livros/algoritmos/">Algoritmos e Programação - Teoria e Prática: para universitários e profissionais de informática</a>: Novatec Editora. <a href="/wiki/Especial:Fontes_de_livros/857522073X" class="internal mw-magiclink-isbn">ISBN 85-7522-073-X</a></li>
+<li><a href="/wiki/Donald_E._Knuth" class="mw-redirect" title="Donald E. Knuth">Donald E. Knuth</a> (1973) <a href="/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">The Art of Computer Programming</a>, Volume 1: Fundamental Algorithms (2ª edição). Addison-Wesley, <a href="/wiki/Especial:Fontes_de_livros/0201038099" class="internal mw-magiclink-isbn">ISBN 0-201-03809-9</a> (em inglês)</li>
+<li><span class="citation wikicite" id="endnote_CHARLES_E._LEISERSON,_Thomas_H._Cormen,_RONALD_L._RIVEST,_CLIFFORD_STEIN(2002)"><a href="#ref_CHARLES_E._LEISERSON,_Thomas_H._Cormen,_RONALD_L._RIVEST,_CLIFFORD_STEIN(2002)">↑</a></span>  CHARLES E. LEISERSON, Thomas H. Cormen, RONALD L. RIVEST, CLIFFORD STEIN , Algoritmos: <i>teoria e prática</i> , CAMPUS - RJ, 2002 <a href="/wiki/Especial:Fontes_de_livros/8535209263" class="internal mw-magiclink-isbn">ISBN 8-535-20926-3</a></li>
+<li>Donald E. Knuth, <i>Selected Papers on Analysis of Algorithms</i>  <a href="/wiki/Especial:Fontes_de_livros/1575862123" class="internal mw-magiclink-isbn">ISBN 1-57586-212-3</a> <a rel="nofollow" class="external text" href="http://www-cs-faculty.stanford.edu/~uno/aa.html">Livro</a> (em inglês)</li>
+<li>T.H. Cormen, C.E. Leiserson, R.L. Rivest, C. Stein,  <a rel="nofollow" class="external text" href="http://mitpress.mit.edu/books/introduction-algorithms">Introduction to Algorithms</a>, 3rd edition,  MIT Press, 2009 <a href="/wiki/Especial:Fontes_de_livros/9780262033848" class="internal mw-magiclink-isbn">ISBN 978-026-203-384-8</a> (em inglês)</li>
+<li>Donald E. Knuth, <a rel="nofollow" class="external text" href="http://www-cs-staff.stanford.edu/~uno/taocp.html">The Art of Computer Programming</a></li>
+<li><span class="citation wikicite" id="endnote_Jon_Kleinberg,_Éva_Tardos(2005)"><a href="#ref_Jon_Kleinberg,_Éva_Tardos(2005)">↑</a></span>   Jon Kleinberg, Éva Tardos,  <i>Algorithm Design</i>, Addison-Wesley, 2005 <a href="/wiki/Especial:Fontes_de_livros/0321295358" class="internal mw-magiclink-isbn">ISBN 0-321-29535-8</a> (em inglês) <a rel="nofollow" class="external text" href="https://web.archive.org/web/20110514100625/http://www.aw-bc.com/info/kleinberg/">Livro</a></li>
+<li>Sanjoy Dasgupta, Christos Papadimitriou, Umesh Vazirani, <a rel="nofollow" class="external text" href="http://highered.mheducation.com/sites/0073523402/index.html">Algorithms</a></li>
+<li>Richard E. Neapolitan, Kumarss Naimipour , <i>Foundations of Algorithms Using Java Pseudocode</i> ,  Jones &amp; Bartlett Learning, 2004 <a href="/wiki/Especial:Fontes_de_livros/0763721298" class="internal mw-magiclink-isbn">ISBN 0-763-72129-8</a> (em inglês)</li>
+<li><span class="citation wikicite" id="endnote_Laira_Vieira_Toscani,_Paulo_A._S._Veloso"><a href="#ref_Laira_Vieira_Toscani,_Paulo_A._S._Veloso">↑</a></span>   Laira Vieira Toscani, Paulo A. S. Veloso, <i>Complexidade de Algoritmos</i>: Série Livros Didáticos Informática UFRGS - Vol. 13 , Bookman <a href="/wiki/Especial:Fontes_de_livros/8540701391" class="internal mw-magiclink-isbn">ISBN 8-540-70139-1</a></li>
+<li>RICARDO LINDEN , <i>Algoritmos Genéticos</i> (2a edição)  , Brasport <a href="/wiki/Especial:Fontes_de_livros/8574523739" class="internal mw-magiclink-isbn">ISBN 8-574-52373-9</a></li>
+<li>Gilberto Farias de Sousa Filho, Eduardo de Santana Medeiros Alexandre, <i>Introdução a Computação -</i> 2ª edição. João Pessoa: Editora da UFPB, 2014. ISBN:978-85-237-0892-4</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r57042293" /><span class="smallcaps">Ziviani, Nivio</span>. <i>Projeto de algoritmos: com implementações em Java e C++</i>. São Paulo: Cengage Learning, 2011.</li></ul>
+<div class="mw-heading mw-heading2"><h2 id="Ligações_externas"><span id="Liga.C3.A7.C3.B5es_externas"></span>Ligações externas</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algoritmo&amp;veaction=edit&amp;section=17" title="Editar secção: Ligações externas" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Algoritmo&amp;action=edit&amp;section=17" title="Editar código-fonte da secção: Ligações externas"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r69325977">@media(max-width:768px){.mw-parser-output .mobile-stack{width:100%!important;float:none!important;margin:10px auto!important;text-align:center!important;box-sizing:border-box!important}.mw-parser-output .mobile-stack .image-container{float:none!important;display:inline-block;padding-bottom:10px}.mw-parser-output .mobile-stack .text-container{margin-left:0!important}}</style><div class="noprint mobile-stack" style="clear: right; border: solid #aaa 1px; margin: 0 0 1em 1em; font-size: 90%; background: var(--background-color-neutral-subtle, #f9f9f9); color: inherit; width: 238px; padding: 5px; spacing: 0; text-align: left; float: right;">
+<div class="image-container" style="float: left; vertical-align:middle; margin: 0 10px 0 5px;"><figure class="mw-halign-none" typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/38px-Wikibooks-logo.svg.png" decoding="async" width="38" height="38" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/57px-Wikibooks-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/76px-Wikibooks-logo.svg.png 2x" data-file-width="300" data-file-height="300" /></span><figcaption></figcaption></figure></div>
+<div class="text-container" style="margin-left: 30px; line-height:normal; vertical-align:middle;">O <a href="/wiki/Wikilivros" title="Wikilivros">Wikilivro</a> <i><a href="https://pt.wikibooks.org/wiki/Special:Search/Introdu%C3%A7%C3%A3o_%C3%A0_programa%C3%A7%C3%A3o" class="extiw" title="b:Special:Search/Introdução à programação">Introdução à programação</a></i> tem uma página intitulada <i><b><a href="https://pt.wikibooks.org/wiki/Special:Search/Introdu%C3%A7%C3%A3o_%C3%A0_programa%C3%A7%C3%A3o/Algoritmos" class="extiw" title="b:Special:Search/Introdução à programação/Algoritmos">Algoritmos</a></b></i>
+</div>
+</div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r69325977" /><div class="noprint mobile-stack" style="clear: right; border: solid #aaa 1px; margin: 0 0 1em 1em; font-size: 90%; background: var(--background-color-neutral-subtle, #f9f9f9); color: inherit; width: 238px; padding: 5px; spacing: 0; text-align: left; float: right;">
+<div class="image-container" style="float: left; vertical-align:middle; margin: 0 10px 0 5px;"><figure class="mw-halign-none" typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/40px-Wikiversity-logo.svg.png" decoding="async" width="40" height="32" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/60px-Wikiversity-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/80px-Wikiversity-logo.svg.png 2x" data-file-width="1000" data-file-height="800" /></span><figcaption></figcaption></figure></div>
+<div class="text-container" style="margin-left: 30px; line-height:normal; vertical-align:middle;">A <a href="/wiki/Wikiversidade" title="Wikiversidade">Wikiversidade</a> possui cursos relacionados a  <i><b><a href="https://pt.wikiversity.org/wiki/Projeto_e_An%C3%A1lise_de_Algoritmos" class="extiw" title="v:Projeto e Análise de Algoritmos">Algoritmo</a></b></i>.</div></div>
+<ul><li><a rel="nofollow" class="external text" href="http://www.ime.usp.br/~pf/algoritmos/">Projeto de Algoritmos em C</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ime.usp.br/~pf/analise_de_algoritmos/stolfi/broder86pessimal.pdf">A. Broder, J. Stolfi, Pessimal Algorithms and Simplexity Analysis</a></li></ul>
+<style data-mw-deduplicate="TemplateStyles:r69328899">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:0 auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}</style><div role="navigation" class="navbox" aria-labelledby="Tópicos_sobre_computação" style="padding:3px"><table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><style data-mw-deduplicate="TemplateStyles:r69811335">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r69825269">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-ver"><a href="/wiki/Predefini%C3%A7%C3%A3o:Computa%C3%A7%C3%A3o" title="Predefinição:Computação"><abbr title="Ver esta predefinição" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-discutir"><a href="/w/index.php?title=Predefini%C3%A7%C3%A3o_Discuss%C3%A3o:Computa%C3%A7%C3%A3o&amp;action=edit&amp;redlink=1" class="new" title="Predefinição Discussão:Computação (página não existe)"><abbr title="Discutir esta predefinição" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">d</abbr></a></li><li class="nv-editar"><a href="/wiki/Especial:EditPage/Predefini%C3%A7%C3%A3o:Computa%C3%A7%C3%A3o" title="Especial:EditPage/Predefinição:Computação"><abbr title="Editar esta predefinição" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Tópicos_sobre_computação" style="font-size:114%;margin:0 4em">Tópicos sobre <a href="/wiki/Computa%C3%A7%C3%A3o" title="Computação">computação</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Hist%C3%B3ria_da_computa%C3%A7%C3%A3o" title="História da computação">História da computação</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a class="mw-selflink selflink">Algoritmos</a></li>
+<li><a href="/wiki/Teoria_da_computa%C3%A7%C3%A3o" title="Teoria da computação">Teoria da computação</a></li>
+<li><a href="/wiki/Aut%C3%B4mato" title="Autômato">Autômatos</a></li>
+<li><a href="/wiki/Computador_qu%C3%A2ntico" title="Computador quântico">Computação quântica</a></li>
+<li><a href="/wiki/Multim%C3%A9dia" title="Multimédia">Multimídia</a></li>
+<li><a href="/wiki/Nanotecnologia" title="Nanotecnologia">Nanotecnologia</a></li>
+<li><a href="/wiki/Bioinform%C3%A1tica" title="Bioinformática">Bioinformática</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Hardware" title="Hardware">Hardware</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Microcontrolador" title="Microcontrolador">Microcontrolador</a></li>
+<li><a href="/wiki/Microprocessador" title="Microprocessador">Microprocessador</a></li>
+<li><a href="/wiki/Disco_r%C3%ADgido" class="mw-redirect" title="Disco rígido">Disco Rígido</a></li>
+<li><a href="/wiki/Mem%C3%B3ria_(computador)" class="mw-redirect" title="Memória (computador)">Memória</a></li>
+<li><a href="/wiki/Modem" title="Modem">Modem</a></li>
+<li><a href="/wiki/Placa-m%C3%A3e" title="Placa-mãe">Placa-mãe</a></li>
+<li><a href="/wiki/Placa_de_rede" title="Placa de rede">Placa de rede</a></li>
+<li><a href="/wiki/Placa_de_som" title="Placa de som">Placa de Som</a></li>
+<li><a href="/wiki/Placa_de_v%C3%ADdeo" title="Placa de vídeo">Placa de Vídeo</a></li>
+<li><a href="/wiki/Placa_sintonizadora_de_TV" class="mw-redirect" title="Placa sintonizadora de TV">Placa sintonizadora de TV</a></li>
+<li><a href="/wiki/Rato_(inform%C3%A1tica)" title="Rato (informática)">Mouse</a></li>
+<li><a href="/wiki/Teclado_(inform%C3%A1tica)" title="Teclado (informática)">Teclado</a></li>
+<li><a href="/wiki/Impressora" title="Impressora">Impressora</a></li>
+<li><a href="/wiki/Digitalizador" title="Digitalizador">Digitalizador</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Software" title="Software">Software</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Programa%C3%A7%C3%A3o_de_computadores" title="Programação de computadores">Programação de computadores</a></li>
+<li><a href="/wiki/Utilit%C3%A1rio" title="Utilitário">Utilitários</a></li>
+<li><a href="/wiki/Sistema_operativo" title="Sistema operativo">Sistemas Operacionais</a></li>
+<li><a href="/wiki/Opera%C3%A7%C3%A3o_bit_a_bit" class="mw-redirect" title="Operação bit a bit">Operação bit a bit</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Internet" title="Internet">Internet</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a></li>
+<li><a href="/wiki/E-mail" title="E-mail">E-mail</a></li>
+<li><a href="/wiki/File_Transfer_Protocol" class="mw-redirect" title="File Transfer Protocol">FTP</a></li>
+<li><a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">IRC</a></li>
+<li><a href="/wiki/P2P" class="mw-redirect" title="P2P">P2P</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Cientista" title="Cientista">Cientistas</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Alan_Kay" title="Alan Kay">Alan Kay</a></li>
+<li><a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a></li>
+<li><a href="/wiki/Ada_Lovelace" title="Ada Lovelace">Ada Lovelace</a></li>
+<li><a href="/wiki/Charles_Babbage" title="Charles Babbage">Charles Babbage</a></li>
+<li><a href="/wiki/Donald_Knuth" title="Donald Knuth">Donald E. Knuth</a></li>
+<li><a href="/wiki/Douglas_Engelbart" title="Douglas Engelbart">Douglas Engelbart</a></li>
+<li><a href="/wiki/Edsger_Dijkstra" title="Edsger Dijkstra">Edsger W. Dijkstra</a></li>
+<li><a href="/wiki/Eric_Steven_Raymond" class="mw-redirect" title="Eric Steven Raymond">Eric S. Raymond</a></li>
+<li><a href="/wiki/John_von_Neumann" title="John von Neumann">John von Neumann</a></li>
+<li><a href="/wiki/Larry_Wall" title="Larry Wall">Larry Wall</a></li>
+<li><a href="/wiki/Marvin_Minsky" title="Marvin Minsky">Marvin Minsky</a></li>
+<li><a href="/wiki/Noam_Chomsky" title="Noam Chomsky">Noam Chomski</a></li>
+<li><a href="/wiki/Richard_Matthew_Stallman" title="Richard Matthew Stallman">Richard M. Stallman</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Terminologia" title="Terminologia">Terminologia</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Lista_de_termos_de_computa%C3%A7%C3%A3o" title="Lista de termos de computação">Termos de computação</a></li>
+<li><a href="/wiki/Lista_de_etimologias_de_termos_usados_em_computa%C3%A7%C3%A3o" class="mw-redirect" title="Lista de etimologias de termos usados em computação">Etimologias de termos usados em computação</a></li></ul>
+</div></td></tr></tbody></table></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r69328899" /><div role="navigation" class="navbox" aria-labelledby="Compressão_de_dados" style="padding:3px"><table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r69811335" /><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r69825269" /><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-ver"><a href="/wiki/Predefini%C3%A7%C3%A3o:Compress%C3%A3o" title="Predefinição:Compressão"><abbr title="Ver esta predefinição" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-discutir"><a href="/w/index.php?title=Predefini%C3%A7%C3%A3o_Discuss%C3%A3o:Compress%C3%A3o&amp;action=edit&amp;redlink=1" class="new" title="Predefinição Discussão:Compressão (página não existe)"><abbr title="Discutir esta predefinição" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">d</abbr></a></li><li class="nv-editar"><a href="/wiki/Especial:EditPage/Predefini%C3%A7%C3%A3o:Compress%C3%A3o" title="Especial:EditPage/Predefinição:Compressão"><abbr title="Editar esta predefinição" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Compressão_de_dados" style="font-size:114%;margin:0 4em"><a href="/wiki/Compress%C3%A3o_de_dados" title="Compressão de dados">Compressão de dados</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Teoria</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Compress%C3%A3o_com_perda_de_dados" title="Compressão com perda de dados">Com perda</a></li>
+<li><a href="/wiki/Compress%C3%A3o_sem_perda_de_dados" title="Compressão sem perda de dados">Sem perda</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Tipos de dados de origem</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Compress%C3%A3o_de_%C3%A1udio" title="Compressão de áudio">Áudio</a></li>
+<li><a href="/wiki/Compress%C3%A3o_de_banda" title="Compressão de banda">Banda</a></li>
+<li><a href="/wiki/Compress%C3%A3o_de_imagens" title="Compressão de imagens">Imagens</a></li>
+<li><a href="/wiki/Compress%C3%A3o_de_v%C3%ADdeo" title="Compressão de vídeo">Vídeo</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Métodos</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Lista_de_algoritmos#Algoritmos_de_Compressão" title="Lista de algoritmos">Lista de algoritmos - Algoritmos de Compressão</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div role="navigation" class="navbox" aria-labelledby="Controle_de_autoridade" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th id="Controle_de_autoridade" scope="row" class="navbox-group" style="width:1%;width: 12%; text-align:center;"><a href="/wiki/Ajuda:Controle_de_autoridade" title="Ajuda:Controle de autoridade">Controle de autoridade</a></th><td class="navbox-list navbox-odd plainlinks" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><span style="white-space:nowrap;"><span typeof="mw:File"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" title="Wikidata"><img alt="Wd" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/20px-Wikidata-logo.svg.png" decoding="async" width="20" height="11" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/30px-Wikidata-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/40px-Wikidata-logo.svg.png 2x" data-file-width="1050" data-file-height="590" /></a></span>: <span class="uid"><a href="https://www.wikidata.org/wiki/Q8366" class="extiw" title="wikidata:Q8366">Q8366</a></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Tesauro_de_Arte_e_Arquitetura" title="Tesauro de Arte e Arquitetura">AAT</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://vocab.getty.edu/page/aat/300065585">300065585</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioteca_Nacional_Central_de_Floren%C3%A7a" title="Biblioteca Nacional Central de Florença">BNCF</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://thes.bncf.firenze.sbn.it/termine.php?id=21026">21026</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioteca_Nacional_da_Espanha" title="Biblioteca Nacional da Espanha">BNE</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://datos.bne.es/resource/XX527980">XX527980</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioteca_Nacional_da_Fran%C3%A7a" title="Biblioteca Nacional da França">BNF</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://catalogue.bnf.fr/ark:/12148/cb119358199">119358199</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Grande_Enciclop%C3%A9dia_Sovi%C3%A9tica" title="Grande Enciclopédia Soviética">BRE</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://old.bigenc.ru/text/1810305">1810305</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Encyclop%C3%A6dia_Britannica" title="Encyclopædia Britannica">EBID</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://www.britannica.com/topic/algorithm">ID</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Faceted_Application_of_Subject_Terminology" title="Faceted Application of Subject Terminology">FAST</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://id.worldcat.org/fast/805020">805020</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Gemeinsame_Normdatei" title="Gemeinsame Normdatei">GND</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/4001183-5">4001183-5</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://web.archive.org/web/*/https://www.jstor.org/topic/algorithms">algorithms</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/N%C3%BAmero_de_controle_da_Biblioteca_do_Congresso" title="Número de controle da Biblioteca do Congresso">LCCN</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://id.loc.gov/authorities/sh85003487">sh85003487</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioteca_Nacional_da_Dieta" title="Biblioteca Nacional da Dieta">NDL</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://id.ndl.go.jp/auth/ndlna/00560337">00560337</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Enciclop%C3%A9dia_Treccani" title="Enciclopédia Treccani">Treccani</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://www.treccani.it/enciclopedia/algoritmo">algoritmo</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Descritores_em_Ci%C3%AAncias_da_Sa%C3%BAde" title="Descritores em Ciências da Saúde">DeCS</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://decs.bvsalud.org/en/ths/resource/?id=19062">19062</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="https://www.wikidata.org/wiki/Q105755418" class="extiw" title="d:Q105755418">CB</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://biblio.cypruslibrary.gov.cy/cgi-bin/koha/opac-authoritiesdetail.pl?marc=1&amp;authid=11402">11402</a></span></span></span></li></ul>
+</div></td></tr></tbody></table></div><div role="navigation" class="navbox" aria-labelledby="Identificadores" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th id="Identificadores" scope="row" class="navbox-group" style="width:1%;width: 12%; text-align:center;">Identificadores</th><td class="navbox-list navbox-odd plainlinks" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><span style="white-space:nowrap;"><a href="/wiki/Medical_Subject_Headings" title="Medical Subject Headings">MeSH</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://meshb.nlm.nih.gov/record/ui?ui=D000465">D000465</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Medical_Subject_Headings" title="Medical Subject Headings">MeSH</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://id.nlm.nih.gov/mesh/G17.035">G17.035</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Sistema_Unificado_de_Linguagem_M%C3%A9dica" title="Sistema Unificado de Linguagem Médica">UMLS</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://web.archive.org/web/https://ncim-stage.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&amp;code=C0002045">C0002045</a></span></span></span></li></ul>
+</div></td></tr></tbody></table></div>
+<ul class="noprint navigation-box" style="border-top: solid silver 1px; border-right: solid silver 1px; border-bottom:1px solid silver; border-left: solid silver 1px; padding:3px; background-color: #F9F9F9; text-align: center; margin-top:10px; margin-left: 0; clear: both;"><li style="display: inline;"><span style="white-space: nowrap; margin: auto 1.5em"><span style="margin-right: 0.5em"><span typeof="mw:File"><a href="/wiki/Ficheiro:Nuvola_apps_edu_mathematics-p.svg" title="Portal da matemática"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nuvola_apps_edu_mathematics-p.svg/25px-Nuvola_apps_edu_mathematics-p.svg.png" decoding="async" width="25" height="25" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nuvola_apps_edu_mathematics-p.svg/38px-Nuvola_apps_edu_mathematics-p.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nuvola_apps_edu_mathematics-p.svg/50px-Nuvola_apps_edu_mathematics-p.svg.png 2x" data-file-width="128" data-file-height="128" /></a></span></span> <span style="font-weight:bold"><a href="/wiki/Portal:Matem%C3%A1tica" title="Portal:Matemática">Portal da matemática</a></span></span></li> <li style="display: inline;"><span style="white-space: nowrap; margin: auto 1.5em"><span style="margin-right: 0.5em"><span typeof="mw:File"><a href="/wiki/Ficheiro:Crystal_Clear_app_ktalkd.png" title="Portal das tecnologias de informação"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Crystal_Clear_app_ktalkd.png/40px-Crystal_Clear_app_ktalkd.png" decoding="async" width="25" height="25" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Crystal_Clear_app_ktalkd.png/60px-Crystal_Clear_app_ktalkd.png 2x" data-file-width="128" data-file-height="128" /></a></span></span> <span style="font-weight:bold"><a href="/wiki/Portal:Tecnologias_de_informa%C3%A7%C3%A3o" title="Portal:Tecnologias de informação">Portal das tecnologias de informação</a></span></span></li>        </ul>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐67db76d8d7‐kgqvl
+Cached time: 20250403182052
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.511 seconds
+Real time usage: 0.987 seconds
+Preprocessor visited node count: 3484/1000000
+Post‐expand include size: 62964/2097152 bytes
+Template argument size: 1548/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 36/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 23821/5000000 bytes
+Lua time usage: 0.319/10.000 seconds
+Lua memory usage: 10581098/52428800 bytes
+Number of Wikibase entities loaded: 18/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  561.414      1 -total
+ 54.91%  308.298      1 Predefinição:Controle_de_autoridade
+ 17.09%   95.939      1 Predefinição:Referências
+ 12.08%   67.825      2 Predefinição:Navbox
+ 11.90%   66.801      1 Predefinição:Computação
+  6.75%   37.896      2 Predefinição:Citar_livro
+  5.76%   32.329      2 Predefinição:Artigo_principal
+  4.52%   25.353      1 Predefinição:Portal3
+  4.17%   23.388      2 Predefinição:Portal3/Portais
+  2.99%   16.763      7 Predefinição:En
+-->
+
+<!-- Saved in parser cache with key ptwiki:pcache:257:|#|:idhash:canonical and timestamp 20250403182052 and revision id 69710680. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://auth.wikimedia.org/loginwiki/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Obtida de "<a dir="ltr" href="https://pt.wikipedia.org/w/index.php?title=Algoritmo&amp;oldid=69710680">https://pt.wikipedia.org/w/index.php?title=Algoritmo&amp;oldid=69710680</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Especial:Categorias" title="Especial:Categorias">Categorias</a>: <ul><li><a href="/wiki/Categoria:Algoritmos" title="Categoria:Algoritmos">Algoritmos</a></li><li><a href="/wiki/Categoria:Terminologia_inform%C3%A1tica" title="Categoria:Terminologia informática">Terminologia informática</a></li><li><a href="/wiki/Categoria:Computa%C3%A7%C3%A3o" title="Categoria:Computação">Computação</a></li><li><a href="/wiki/Categoria:Ci%C3%AAncia_da_computa%C3%A7%C3%A3o" title="Categoria:Ciência da computação">Ciência da computação</a></li><li><a href="/wiki/Categoria:Programas_de_computador" title="Categoria:Programas de computador">Programas de computador</a></li><li><a href="/wiki/Categoria:Tecnologia_da_informa%C3%A7%C3%A3o" title="Categoria:Tecnologia da informação">Tecnologia da informação</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Categorias ocultas: <ul><li><a href="/wiki/Categoria:!P%C3%A1ginas_que_usam_hiperliga%C3%A7%C3%B5es_m%C3%A1gicas_ISBN" title="Categoria:!Páginas que usam hiperligações mágicas ISBN">!Páginas que usam hiperligações mágicas ISBN</a></li><li><a href="/wiki/Categoria:!Artigos_destacados_na_Wikip%C3%A9dia_em_t%C3%A1rtaro" title="Categoria:!Artigos destacados na Wikipédia em tártaro">!Artigos destacados na Wikipédia em tártaro</a></li><li><a href="/wiki/Categoria:!Artigos_bons_na_Wikip%C3%A9dia_em_ucraniano" title="Categoria:!Artigos bons na Wikipédia em ucraniano">!Artigos bons na Wikipédia em ucraniano</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> Esta página foi editada pela última vez às 13h54min de 11 de março de 2025.</li>
+	<li id="footer-info-copyright">Este texto é disponibilizado nos termos da licença <a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt">Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0) da Creative Commons</a>;
+pode estar sujeito a condições adicionais.
+Para mais detalhes, consulte as <a class="external text" href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">condições de utilização</a>.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/pt-br">Política de privacidade</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikip%C3%A9dia:Sobre">Sobre a Wikipédia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikip%C3%A9dia:Aviso_geral">Avisos gerais</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Código de conduta</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Programadores</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/pt.wikipedia.org">Estatísticas</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Declaração sobre cookies</a></li>
+	<li id="footer-places-mobileview"><a href="//pt.m.wikipedia.org/w/index.php?title=Algoritmo&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Versão móvel</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Busca</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input"
+									
+									type="search" name="search" placeholder="Pesquisar na Wikipédia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Especial:Pesquisar">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Pesquisar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Conteúdo" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Alternar o índice"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Alternar o índice</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Algoritmo</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>132 línguas</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Adicionar tópico</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-657694b6f8-bdjjc","wgBackendResponseTime":270,"wgPageParseReport":{"limitreport":{"cputime":"0.511","walltime":"0.987","ppvisitednodes":{"value":3484,"limit":1000000},"postexpandincludesize":{"value":62964,"limit":2097152},"templateargumentsize":{"value":1548,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":36,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":23821,"limit":5000000},"entityaccesscount":{"value":18,"limit":400},"timingprofile":["100.00%  561.414      1 -total"," 54.91%  308.298      1 Predefinição:Controle_de_autoridade"," 17.09%   95.939      1 Predefinição:Referências"," 12.08%   67.825      2 Predefinição:Navbox"," 11.90%   66.801      1 Predefinição:Computação","  6.75%   37.896      2 Predefinição:Citar_livro","  5.76%   32.329      2 Predefinição:Artigo_principal","  4.52%   25.353      1 Predefinição:Portal3","  4.17%   23.388      2 Predefinição:Portal3/Portais","  2.99%   16.763      7 Predefinição:En"]},"scribunto":{"limitreport-timeusage":{"value":"0.319","limit":"10.000"},"limitreport-memusage":{"value":10581098,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-67db76d8d7-kgqvl","timestamp":"20250403182052","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Algoritmo","url":"https:\/\/pt.wikipedia.org\/wiki\/Algoritmo","sameAs":"http:\/\/www.wikidata.org\/entity\/Q8366","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q8366","author":{"@type":"Organization","name":"Contribuidores dos projetos da Wikimedia"},"publisher":{"@type":"Organization","name":"Funda\u00e7\u00e3o Wikimedia, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-12-12T00:24:31Z","dateModified":"2025-03-11T13:54:42Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/6\/6a\/Sorting_quicksort_anim.gif","headline":"sequ\u00eancia finita de a\u00e7\u00f5es execut\u00e1veis que visam obter uma solu\u00e7\u00e3o para um determinado tipo de problema"}</script>
+</body>
+</html>

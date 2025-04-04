@@ -1,0 +1,26 @@
+{
+  "Tipo": "Alfabeto",
+  "Línguas": "grego e tsaconiano",
+  "Período de tempo": "c. 800 a.C. [ 1 ] — presente",
+  "Status": "Escrita nacional e oficial da Grécia e do Chipre ; Escrita oficial da União Europeia [ 2 ]",
+  "Sistemas-pais": [
+    "Alfabeto protossinaíticoAlfabeto fenícioAlfabeto grego",
+    "Alfabeto fenícioAlfabeto grego",
+    "Alfabeto grego",
+    ""
+  ],
+  "Sistemas-filhos": [
+    "Alfabeto góticoAlfabeto glagolíticoAlfabeto cirílicoAlfabeto coptoAlfabeto armênioAntigas escritas itálicasAlfabeto etruscoAlfabeto latino",
+    "Alfabeto gótico",
+    "Alfabeto glagolítico",
+    "Alfabeto cirílico",
+    "Alfabeto copto",
+    "Alfabeto armênio",
+    "Antigas escritas itálicas",
+    "Alfabeto etrusco",
+    "Alfabeto latino"
+  ],
+  "Direção": "Esquerda-para-direita",
+  "ISO 15924": "Grek, 200",
+  "Conjunto de carateres Unicode": "U+0370–U+03FF Grego e copta U+1F00–U+1FFF Grego estendido"
+}

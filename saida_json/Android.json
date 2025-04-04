@@ -1,0 +1,16 @@
+{
+  "Produção": "Google LLC Open Handset Alliance",
+  "Linguagem": "Java (UI), C (núcleo), C++ , Rust , [ 1 ] entre outras [ 2 ]",
+  "Modelo": "Código aberto com aplicações com software de código fechado [ 3 ] [ 4 ]",
+  "Lançamento": "23 de setembro de 2008 (16 anos)",
+  "Versão estável": "15.0 4 de fevereiro de 2025 ; há 54 dias",
+  "Mercado-alvo": "Smartphones Tablets Televisores conectados ( Android TV ) Android Auto Relógios inteligentes ( Wear OS )",
+  "Idioma(s)": "Multilinguagem (63 idiomas)",
+  "Método de atualização": "Over the Air",
+  "Arquitetura(s)": "ARM , MIPS [ 5 ] , Power [ 6 ] , x86 [ 7 ] , x64 [ 8 ]",
+  "Gestão de pacotes": "APK , Google Play",
+  "Núcleo": "Monolítico ( núcleo Linux modificado)",
+  "Interface": "Gráfico",
+  "Licença": "Apache 2.0, patches do kernel Linux estão sob a GPL v2 [ 9 ]",
+  "Página oficial": "www .android .com"
+}

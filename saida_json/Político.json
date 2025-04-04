@@ -1,0 +1,27 @@
+{
+  "Nomes": [
+    "Presidente",
+    "Senador",
+    "Primeiro-ministro",
+    "Ministro",
+    "Parlamentar",
+    "Governador",
+    "Prefeito",
+    "Vereador"
+  ],
+  "Tipo": "Política",
+  "Setor de atividade": "Governo",
+  "Competências": [
+    "Liderança",
+    "Pensamento crítico",
+    "Oratória",
+    "Legislar",
+    "Tomada de decisão",
+    "Influenciar",
+    "etc..."
+  ],
+  "Educação requirida": "Qualificação não é necessária",
+  "Campos de trabalho": "Governo",
+  "Empregos relacionados": "Monarca",
+  "Salário médio": "(Brasil) R$ 19.000 - R$ 39.000 mensais."
+}

@@ -1,0 +1,12 @@
+{
+  "Produção": "Comunidade de código aberto do CyanogenMod",
+  "Linguagem": "C (núcleo), C++ (bibliotecas de terceiros), Java (UI)",
+  "Modelo": "código aberto",
+  "Lançamento": "1 de julho de 2009 ; há 15 anos",
+  "Versão estável": "14.1 baseado no Android 7.1 (8 de novembro de 2016)",
+  "Mercado-alvo": "smartphone",
+  "Núcleo": "Monolithic ( Kernel Linux )",
+  "Interface": "Stock Android launcher (3.x, 4.x) ADWLauncher (5.x, 6.x, 7.x) Trebuchet Launcher (9.x, 10.x, 11, 12.x, 13)",
+  "Licença": "Apache License 2 e GNU GPL v2, com algumas bibliotecas proprietárias",
+  "Página oficial": "web .archive .org /web /20161224194030 /https: //www .cyanogenmod .org /"
+}

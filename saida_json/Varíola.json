@@ -1,0 +1,21 @@
+{
+  "Especialidade": "Infectologia",
+  "Sintomas": "Iniciais : Febre , vómitos , úlceras na boca [ 1 ] Tardios : Bolhas com líquido que evoluem para crostas [ 1 ]",
+  "Complicações": "Cicatrizes na pele, cegueira [ 2 ]",
+  "Início habitual": "1 a 3 semanas após exposição [ 1 ]",
+  "Duração": "Cerca de 4 semanas [ 1 ]",
+  "Causas": "Variola major , Variola minor (transmitida entre pessoas) [ 2 ] [ 3 ]",
+  "Método de diagnóstico": "Baseado nos sintomas e confirmado por RCP [ 4 ]",
+  "Condições semelhantes": "Varicela , impetigo , molusco contagioso , varíola dos macacos [ 4 ]",
+  "Prevenção": "Vacina contra a varíola [ 5 ]",
+  "Tratamento": "Cuidados de apoio [ 6 ]",
+  "Prognóstico": "Risco de morte: 30% [ 1 ]",
+  "Frequência": "Erradicada (último caso em 1977)",
+  "CID - 11": "1E70",
+  "CID - 10": "B03",
+  "CID - 9": "050",
+  "DiseasesDB": "12219",
+  "MedlinePlus": "001356",
+  "eMedicine": "emerg/885",
+  "MeSH": "D012899"
+}

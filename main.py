@@ -1,25 +1,83 @@
+from config.logging import setup_logging
+
+import logging
 import requests
 from bs4 import BeautifulSoup
 import time
 import os
 import json
+import random
+import pickle
+import re
+
+# Configuração do logger
+setup_logging()
+logger = logging.getLogger(__name__)
 
 HTML_DIR = "saida_html"
 JSON_DIR = "saida_json"
-MAX_PAGINAS = 5 # Valor de teste inicial 
+MAX_PAGINAS = 5000 
 URL_INICIAL = "https://pt.wikipedia.org/wiki/Grammy_Awards"
 
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+}
+
+# Funções auxiliares
+def salvar_progresso(links_visitados, contador, lista_links, proximo_link):
+    """
+    Função para salvar o progresso do crawler em um arquivo pickle.
+    A cada 50 páginas coletadas no crawler, esta função é chamada e o progresso é salvo.
+
+    :param links_visitados: Conjunto de links já visitados
+    :param contador: Contador de páginas coletadas
+    :param lista_links: Lista de links extraídos
+    :param proximo_link: Próximo link a ser visitado
+    """
+    progresso = {
+            'visitados': links_visitados,
+            'contador': contador,
+            'lista_links': lista_links,
+            'proximo_link': proximo_link
+    }
+    with open('progresso.pkl', 'wb') as arq:
+        pickle.dump(progresso, arq)
+
+def carregar_progresso():
+    """
+    Função para carregar o progresso do crawler a partir de um arquivo pickle.
+    Se o arquivo existir, os dados são carregados e retornados.
+
+    :return: Dicionário com o progresso salvo, ou None se o arquivo não existir
+    """
+    try:
+        with open('progresso.pkl', 'rb') as arq:
+            progresso = pickle.load(arq)
+            progresso['visitados'] = set(progresso['visitados'])
+            return progresso
+    except FileNotFoundError:
+        return None
+
+def tratar_nome_arquivo(nome_arquivo):
+    return re.sub(r'[<>:"/\\|?*]', '_', nome_arquivo)  # Substitui caracteres inválidos para nomes de arquivos
+
+## FUNÇÕES TAREFA 1:
 # Função para salvar a página como um arquivo HTML
 def salvar_pagina_html(url, titulo):
     if not os.path.exists(HTML_DIR): # Cria o diretório de saída html, se ele não existir
         os.makedirs(HTML_DIR)
 
-    response = requests.get(url)
-    caminho_arquivo = os.path.join(HTML_DIR, f"{titulo}.html")
+    response = requests.get(url, headers=HEADERS)
+    if response.status_code != 200:
+        logger.info(f"Erro ao acessar: {url}. Status code: {response.status_code}")
+        return None
+
+    nome_arquivo = tratar_nome_arquivo(titulo)  # Trata o nome do arquivo para evitar caracteres inválidos
+    caminho_arquivo = os.path.join(HTML_DIR, f"{nome_arquivo}.html")
 
     with open(caminho_arquivo, "w", encoding="utf-8") as f:
         f.write(response.text)
-    print(f"Página salva: {caminho_arquivo}")
+    logger.info(f"Página salva: {caminho_arquivo}")
 
 # Função para extrair links de uma página
 def extrair_links(soup):
@@ -35,60 +93,102 @@ def extrair_links(soup):
 def escolher_proximo_link(links, visitados):
     for link in links:
         if link not in visitados:
+            visitados.add(link)
             return link
     return None  # Retorna None se todos os links já foram visitados
 
 def crawler_wikipedia(url_inicial):
-    links_visitados = set()  # Conjunto para armazenar links já visitados
-    paginas_coletadas = 0    # Contador de páginas coletadas
-    proximo_link = url_inicial  # Começa pela página inicial
+    progresso = carregar_progresso() # Tenta carregar o progresso anterior
+    if progresso:
+        links_visitados = progresso['visitados']
+        paginas_coletadas = progresso['contador']
+        links = progresso['lista_links']
+        proximo_link = progresso['proximo_link']
+        logger.info(f"Retomando de {paginas_coletadas} páginas coletadas")
+    else:
+        links_visitados = set()
+        paginas_coletadas = 0
+        links = []
+        proximo_link = url_inicial  # Começa pela página inicial
 
+    
     while paginas_coletadas < MAX_PAGINAS:
         try:
             # 1. Obter a página
-            response = requests.get(proximo_link)
+            response = requests.get(proximo_link, headers=HEADERS)
+
+            if response.status_code == 429:  # Se receber erro 429 (Too Many Requests), aguarda e tenta novamente
+                logger.info("Muitas requisições. Aguardando 10 segundos...")
+                time.sleep(10)
+                continue
+
+            elif response.status_code != 200:
+                logger.info(f"Erro ao acessar: {proximo_link}. Status code: {response.status_code}")
+                links_visitados.add(proximo_link)  # Adiciona o link à lista de visitados
+                proximo_link = escolher_proximo_link(links, links_visitados)
+                if not proximo_link:
+                    logger.info("Todos os links foram visitados.")
+                    break
+                continue # Tenta o próximo link
+
+
             soup = BeautifulSoup(response.content, "html.parser")
 
             # 2. Salvar a página como um arquivo HTML
             titulo = soup.select(".mw-page-title-main")
-            nome_arquivo = titulo[0].text
+            nome_arquivo = titulo[0].text if titulo else f"pagina_{paginas_coletadas}" # Se não encontrar título, usa um padrão
             salvar_pagina_html(proximo_link, nome_arquivo)
 
-            # 3. Extrair todos os links da página
-            links = extrair_links(soup)
+            # 3. Marcar a página como visitada
+            links_visitados.add(proximo_link) # Adiciona o link à lista de visitados
+            paginas_coletadas += 1 
+            logger.info(f"Páginas coletadas: {paginas_coletadas}")
 
-            # 4. Adicionar links à lista de visitados
-            links_visitados.add(proximo_link)
+            # 4. Extrair todos os links da página, sem sobrescrever links coletados anteriormente
+            novos_links = extrair_links(soup)
+            links.extend([link for link in novos_links if link not in links and link not in links_visitados]) # Adiciona apenas links novos, sem repetições
+
+            if len(links) > 1000: # Limita o tamanho da lista para evitar sobrecarga de memória
+                links = links[-1000:] # Mantém apenas os 1000 links mais recentes
+
+            logger.info(f"Lista de próximos links: {len(links)}")            
 
             # 5. Escolher o próximo link não visitado
             proximo_link = escolher_proximo_link(links, links_visitados)
             if not proximo_link:
-                print("Todos os links foram visitados.")
+                logger.info("Todos os links foram visitados.")
                 break
+            
+            logger.info(f"Próximo link: {proximo_link}")
 
             # 6. Atualizar o próximo link para a URL completa
             proximo_link = "https://pt.wikipedia.org" + proximo_link
 
-            # 7. Incrementar o contador de páginas coletadas
-            paginas_coletadas += 1
-            print(f"Páginas coletadas: {paginas_coletadas}")
+            # 7. Salva o progresso a cada 50 páginas coletadas
+            if paginas_coletadas % 50 == 0: 
+                salvar_progresso(list(links_visitados), paginas_coletadas, links, proximo_link)
+                logger.info(f"Progresso salvo: {paginas_coletadas} páginas coletadas.")
+            
+            # 8. Esperar um tempo aleatório para não sobrecarregar o servidor
+            espera = random.uniform(5, 8)  # Escolhe um valor entre 5 e 8 segundos
+            time.sleep(espera)
 
-            # 8. Esperar um pouco para não sobrecarregar o servidor
-            time.sleep(1)
 
         except Exception as e:
-            print(f"Erro ao processar a página: {proximo_link}")
-            print(f"Detalhes do erro: {e}")
-            break
+            logger.info(f"Erro ao processar a página: {proximo_link}")
+            logger.info(f"Detalhes do erro: {str(e)}")
+            links_visitados.add(proximo_link)  # Adiciona o link com erro à lista de visitados
+            proximo_link = escolher_proximo_link(links, links_visitados)
+            if not proximo_link:
+                break  # Para o loop se não houver mais links
+            proximo_link = "https://pt.wikipedia.org" + proximo_link
+            continue # Tenta o próximo link
+            
 
-    print(f"Coleta concluída. Total de páginas coletadas: {paginas_coletadas}")
-
-# TAREFA 1: Iniciar o crawler com a URL inicial
-crawler_wikipedia(URL_INICIAL)
+    logger.info(f"Coleta concluída. Total de páginas coletadas: {paginas_coletadas}")
 
 
-# TAREFA 2: Extrair Infoboxes e exportar para JSON
-
+## FUNÇÕES TAREFA 2: 
 def save_json(dados, output_dir, nome_arquivo):
     if not os.path.exists(output_dir): # Cria o diretório de saída JSON, se ele não existir
         os.makedirs(output_dir)
@@ -209,5 +309,16 @@ def process_infoboxes(diretorio, output_dir=JSON_DIR):
     return resultados
 
 
-# TAREFA 2: Executar
-process_infoboxes(HTML_DIR)
+### EXECUÇÃO DAS TAREFAS ###
+
+def main():
+    # TAREFA 1: Iniciar o crawler com a URL inicial
+    crawler_wikipedia(URL_INICIAL)
+
+    # TAREFA 2: Extrair Infoboxes e exportar para JSON
+    process_infoboxes(HTML_DIR)
+
+
+if __name__ == "__main__":
+    main()
+
